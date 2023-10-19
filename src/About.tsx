@@ -3,9 +3,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Paper, Box, Typography } from "@mui/material";
 
+import pointing from "./img/pointing.png";
+import robotTesting from "./img/robotTesting.jpg";
+import teamPhoto from "./img/teamPhoto.jpg";
+
 const rowData = [
   {
-    img: "img/pointing.png",
+    img: pointing,
     heading: "Who are we?",
     para: (
       <>
@@ -24,7 +28,7 @@ const rowData = [
     ),
   },
   {
-    img: "img/robotTesting.jpg",
+    img: robotTesting,
     heading: "What do we do?",
     para: (
       <>
@@ -42,7 +46,7 @@ const rowData = [
 export default function About() {
   return (
     <>
-      <img src="img/teamPhoto.jpg" width={"100%"}></img>
+      <img src={teamPhoto} loading="lazy" width={"100%"}></img>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <Box textAlign="center">
           <Grid container rowSpacing={3} columnSpacing={2}>
@@ -67,7 +71,7 @@ export default function About() {
             {rowData.map((entry) => (
               <Grid container key={entry.heading}>
                 <Grid xs={12} md={6} maxWidth="100%">
-                  <img src={entry.img} width="100%"></img>
+                  <img src={entry.img} loading="lazy" width="100%"></img>
                 </Grid>
                 <Grid xs={12} md={6}>
                   <Paper sx={{ p: 3, minHeight: "100%" }}>

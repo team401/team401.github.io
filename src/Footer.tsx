@@ -13,7 +13,7 @@ import theme from "./theme";
 const socials = [
   {
     icon: <GitHubIcon fontSize="large" />,
-    link: "http://team401.github.ios",
+    link: "http://github.com/team401",
   },
   {
     icon: <InstagramIcon fontSize="large" />,

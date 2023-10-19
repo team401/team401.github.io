@@ -11,6 +11,8 @@ import Drawer from "@mui/material/Drawer";
 import { List, ListItemButton, ListItemText } from "@mui/material";
 import { Link } from "react-router-dom";
 
+import logo from "./img/logo_white.png";
+
 const pages = [
   { title: "About", url: "/" },
   { title: "Get Involved", url: "/involved" },
@@ -38,7 +40,7 @@ function TeamAppBar() {
 
   const logoImage = (
     <img
-      src="img/logo_white.png"
+      src={logo}
       style={{
         maxHeight: 40,
         marginTop: 10,
