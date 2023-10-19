@@ -12,11 +12,11 @@ import { List, ListItemButton, ListItemText } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const pages = [
-  { title: "About", url: "about" },
-  { title: "Get Involved", url: "involved" },
-  { title: "Outreach", url: "outreach" },
-  { title: "Resources", url: "resources" },
-  { title: "Sponsors", url: "sponsors" },
+  { title: "About", url: "/" },
+  { title: "Get Involved", url: "/involved" },
+  { title: "Outreach", url: "/outreach" },
+  { title: "Resources", url: "/resources" },
+  { title: "Sponsors", url: "/sponsors" },
 ];
 
 function TeamAppBar() {
@@ -50,7 +50,7 @@ function TeamAppBar() {
   );
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="fixed">
       <Container disableGutters maxWidth={false}>
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", md: "flex" }, paddingLeft: 2 }}>
@@ -64,7 +64,7 @@ function TeamAppBar() {
           >
             <List component="nav" onClick={toggleDrawer(false)}>
               {pages.map((page) => (
-                <ListItemButton component={Link} to={page.url}>
+                <ListItemButton component={Link} to={page.url} key={page.title}>
                   <ListItemText primary={page.title} />
                 </ListItemButton>
               ))}
@@ -102,9 +102,10 @@ function TeamAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                component={Link}
+                to={page.url}
                 key={page.title}
                 onClick={toggleDrawer(false)}
-                href={page.url}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page.title}

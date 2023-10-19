@@ -39,7 +39,7 @@ const rowData = [
   },
 ];
 
-export default function Landing() {
+export default function About() {
   return (
     <>
       <img src="img/teamPhoto.jpg" width={"100%"}></img>
@@ -65,7 +65,7 @@ export default function Landing() {
               </Typography>
             </Grid>
             {rowData.map((entry) => (
-              <>
+              <Grid container key={entry.heading}>
                 <Grid xs={12} md={6} maxWidth="100%">
                   <img src={entry.img} width="100%"></img>
                 </Grid>
@@ -91,7 +91,7 @@ export default function Landing() {
                     </Typography>
                   </Paper>
                 </Grid>
-              </>
+              </Grid>
             ))}
           </Grid>
         </Box>

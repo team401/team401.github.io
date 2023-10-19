@@ -8,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import theme from "./theme";
 
 const socials = [
   {
@@ -49,11 +50,17 @@ function Copyright() {
 export default function Footer() {
   return (
     <>
-      <Container disableGutters maxWidth={false} sx={{ paddingTop: 3 }}>
-        <Box sx={{ bgcolor: "background.paper", p: 1 }} component="footer">
+      <Container
+        disableGutters
+        maxWidth={false}
+        sx={{ paddingTop: 3, background: theme.palette.background.default }}
+      >
+        <Box sx={{ p: 1 }} component="footer">
           <Stack spacing={2} direction="row" justifyContent="center">
             {socials.map((social) => (
-              <Link href={social.link}>{social.icon}</Link>
+              <Link href={social.link} key={social.link}>
+                {social.icon}
+              </Link>
             ))}
           </Stack>
           <Copyright />
