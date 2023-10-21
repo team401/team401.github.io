@@ -12,16 +12,9 @@ import { List, ListItemButton, ListItemText } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import logo from "./img/logo_white.png";
+import { PageType } from "./App";
 
-const pages = [
-  { title: "About", url: "/" },
-  { title: "Get Involved", url: "/involved" },
-  { title: "Outreach", url: "/outreach" },
-  { title: "Resources", url: "/resources" },
-  { title: "Sponsors", url: "/sponsors" },
-];
-
-function TeamAppBar() {
+function TeamAppBar(props: { pages: PageType[] }) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer =
@@ -65,8 +58,12 @@ function TeamAppBar() {
             sx={{ minWidth: 100 }}
           >
             <List component="nav" onClick={toggleDrawer(false)}>
-              {pages.map((page) => (
-                <ListItemButton component={Link} to={page.url} key={page.title}>
+              {props.pages.map((page) => (
+                <ListItemButton
+                  component={Link}
+                  to={page.path}
+                  key={page.title}
+                >
                   <ListItemText primary={page.title} />
                 </ListItemButton>
               ))}
@@ -102,10 +99,10 @@ function TeamAppBar() {
             }}
           ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {props.pages.map((page) => (
               <Button
                 component={Link}
-                to={page.url}
+                to={page.path}
                 key={page.title}
                 onClick={toggleDrawer(false)}
                 sx={{ my: 2, color: "white", display: "block" }}

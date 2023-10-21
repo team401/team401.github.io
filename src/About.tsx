@@ -49,13 +49,14 @@ export default function About() {
       <img src={teamPhoto} loading="lazy" width={"100%"}></img>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <Box textAlign="center">
-          <Grid container rowSpacing={3} columnSpacing={2}>
+          <Grid container rowSpacing={5} columnSpacing={2}>
             <Grid xs={12}>
               <Typography
                 variant="h3"
                 align="center"
                 color="text.secondary"
                 component="h1"
+                sx={{ mb: 2 }}
               >
                 FRC Team 401: Copperhead Robotics
               </Typography>
