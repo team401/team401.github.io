@@ -7,7 +7,13 @@ import pointing from "./img/pointing.png";
 import robotTesting from "./img/robotTesting.jpg";
 import teamPhoto from "./img/teamPhoto.jpg";
 
-const rowData = [
+type aboutEntry = {
+  img: string;
+  heading: string;
+  para: JSX.Element;
+};
+
+const aboutSections: aboutEntry[] = [
   {
     img: pointing,
     heading: "Who are we?",
@@ -69,10 +75,10 @@ export default function About() {
                 "Docendo Discimus" - By Teaching, We Learn.
               </Typography>
             </Grid>
-            {rowData.map((entry) => (
-              <Grid container key={entry.heading}>
+            {aboutSections.map((section) => (
+              <Grid container key={section.heading}>
                 <Grid xs={12} md={6} maxWidth="100%">
-                  <img src={entry.img} loading="lazy" width="100%"></img>
+                  <img src={section.img} loading="lazy" width="100%"></img>
                 </Grid>
                 <Grid xs={12} md={6}>
                   <Paper sx={{ p: 3, minHeight: "100%" }}>
@@ -83,7 +89,7 @@ export default function About() {
                       component="h1"
                       paddingBottom={2}
                     >
-                      {entry.heading}
+                      {section.heading}
                     </Typography>
                     <Typography
                       variant="body1"
@@ -92,7 +98,7 @@ export default function About() {
                       fontSize="large"
                       component="p"
                     >
-                      {entry.para}
+                      {section.para}
                     </Typography>
                   </Paper>
                 </Grid>
