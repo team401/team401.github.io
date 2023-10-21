@@ -10,6 +10,7 @@ import Resources from "./Resources";
 import Sponsors from "./Sponsors";
 import Involved from "./Involved";
 import Robots from "./Robots";
+import Coalition from "./Coalition";
 
 export type PageType = {
   path: string;
@@ -24,6 +25,7 @@ const pages: PageType[] = [
   { path: "/robots", title: "Robots", elem: <Robots /> },
   { path: "/resources", title: "Resources", elem: <Resources /> },
   { path: "/sponsors", title: "Sponsors", elem: <Sponsors /> },
+  { path: "/coalition", title: "Coalition", elem: <Coalition /> },
 ];
 
 export default function App() {
@@ -33,7 +35,7 @@ export default function App() {
       <Box sx={{ height: "5vh" }}></Box>
       <Routes>
         {pages.map((page) => (
-          <Route path={page.path} element={page.elem} />
+          <Route path={page.path} element={page.elem} key={page.path} />
         ))}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
