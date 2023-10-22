@@ -86,6 +86,8 @@ const robots: RobotInfo[] = [
     codeLink: "https://github.com/team401/2022-Robot-Code",
     cadLink:
       "https://cad.onshape.com/documents/489185223ddbfec8c89a2277/w/632bf353cba19a51e989f488",
+    techBinder:
+      "https://drive.google.com/file/d/14bgZD7nQk-9XXW4DcOFP1cOpHNvDAGn0/view?usp=share_link",
   }),
   new RobotInfo(2021, "Glycon", {
     record: "6-5-0",
@@ -93,6 +95,9 @@ const robots: RobotInfo[] = [
     full: robot2021full,
     cadLink:
       "https://cad.onshape.com/documents/84707311327861b9fdce8a73/w/652c81d4db21c84dc91a591d",
+    techBinder:
+      "https://drive.google.com/file/d/1O-RUZgj50lH8vMUX-ZaY8y-wQ7lLyuIa/view?usp=share_link",
+    codeLink: "https://github.com/team401/2021-Robot-Code",
   }),
   new RobotInfo(2020, "Leviathan"),
   new RobotInfo(2019, "Ouroboros", {
@@ -128,11 +133,10 @@ export default function Robots() {
                 <Grid xs={12} item md={robot.img ? 6 : 0} maxWidth="100%">
                   <Zoom
                     zoomImg={{
-                      src: "./img/robots/full/" + robot.year + ".png",
+                      src: robot.full,
                     }}
                   >
                     <img
-                      alt={robot.name}
                       src={robot.img}
                       loading="lazy"
                       style={{ maxHeight: 500, maxWidth: "100%" }}
