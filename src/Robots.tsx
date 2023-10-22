@@ -6,8 +6,12 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 
-import robot2023 from "./img/robots/2023.jpg";
-import robot2022 from "./img/robots/2022.jpg";
+import robot2023 from "./img/robots/2023.png";
+import robot2022 from "./img/robots/2022.png";
+import robot2021 from "./img/robots/2021.png";
+import robot2017 from "./img/robots/2017.png";
+import robot2016 from "./img/robots/2016.png";
+import robot2015 from "./img/robots/2015.png";
 
 class RobotInfo {
   year: number;
@@ -67,14 +71,22 @@ const robots: RobotInfo[] = [
   }),
   new RobotInfo(2021, "Glycon", {
     record: "6-5-0",
+    img: robot2021,
     cadLink:
       "https://cad.onshape.com/documents/84707311327861b9fdce8a73/w/652c81d4db21c84dc91a591d",
   }),
   new RobotInfo(2020, "Leviathan"),
   new RobotInfo(2019, "Ouroboros"),
   new RobotInfo(2018, "Apophsis"),
-  new RobotInfo(2017, "Phil"),
-  new RobotInfo(2016, "Quetzalcoatl"),
+  new RobotInfo(2017, "Phil", {
+    img: robot2017,
+  }),
+  new RobotInfo(2016, "Quetzalcoatl", {
+    img: robot2016,
+  }),
+  new RobotInfo(2015, "", {
+    img: robot2015,
+  }),
 ];
 
 export default function Robots() {

@@ -20,7 +20,7 @@ export type PageType = {
 
 const pages: PageType[] = [
   { path: "/", title: "About", elem: <About /> },
-  { path: "/involved", title: "Involved", elem: <Involved /> },
+  { path: "/involved", title: "Get Involved", elem: <Involved /> },
   { path: "/outreach", title: "Outreach", elem: <Outreach /> },
   { path: "/robots", title: "Robots", elem: <Robots /> },
   { path: "/resources", title: "Resources", elem: <Resources /> },
