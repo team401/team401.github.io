@@ -9,6 +9,8 @@ import CardContent from "@mui/material/CardContent";
 import robot2023 from "./img/robots/2023.png";
 import robot2022 from "./img/robots/2022.png";
 import robot2021 from "./img/robots/2021.png";
+import robot2019 from "./img/robots/2019.png";
+import robot2018 from "./img/robots/2018.png";
 import robot2017 from "./img/robots/2017.png";
 import robot2016 from "./img/robots/2016.png";
 import robot2015 from "./img/robots/2015.png";
@@ -76,8 +78,12 @@ const robots: RobotInfo[] = [
       "https://cad.onshape.com/documents/84707311327861b9fdce8a73/w/652c81d4db21c84dc91a591d",
   }),
   new RobotInfo(2020, "Leviathan"),
-  new RobotInfo(2019, "Ouroboros"),
-  new RobotInfo(2018, "Apophsis"),
+  new RobotInfo(2019, "Ouroboros", {
+    img: robot2019,
+  }),
+  new RobotInfo(2018, "Apophsis", {
+    img: robot2018,
+  }),
   new RobotInfo(2017, "Phil", {
     img: robot2017,
   }),
