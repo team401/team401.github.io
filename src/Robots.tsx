@@ -1,24 +1,35 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { Button, Grid, Paper, Stack, Typography, Link } from "@mui/material";
+import { Button, Grid, Stack, Typography, Link } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-import robot2023 from "./img/robots/2023.png";
-import robot2022 from "./img/robots/2022.png";
-import robot2021 from "./img/robots/2021.png";
-import robot2019 from "./img/robots/2019.png";
-import robot2018 from "./img/robots/2018.png";
-import robot2017 from "./img/robots/2017.png";
-import robot2016 from "./img/robots/2016.png";
-import robot2015 from "./img/robots/2015.png";
+import robot2023 from "./img/robots/small2023.png";
+import robot2023full from "./img/robots/big/big2023.png";
+import robot2022 from "./img/robots/small2022.png";
+import robot2022full from "./img/robots/big/big2022.png";
+import robot2021 from "./img/robots/small2021.png";
+import robot2021full from "./img/robots/big/big2021.png";
+import robot2019 from "./img/robots/small2019.png";
+import robot2019full from "./img/robots/big/big2019.png";
+import robot2018 from "./img/robots/small2018.png";
+import robot2018full from "./img/robots/big/big2018.png";
+import robot2017 from "./img/robots/small2017.png";
+import robot2017full from "./img/robots/big/big2017.png";
+import robot2016 from "./img/robots/small2016.png";
+import robot2016full from "./img/robots/big/big2016.png";
+import robot2015 from "./img/robots/small2015.png";
+import robot2015full from "./img/robots/big/big2015.png";
 
 class RobotInfo {
   year: number;
   name: string;
   img?: string;
+  full?: string;
   cadLink?: string;
   codeLink?: string;
   techBinder?: string;
@@ -31,6 +42,7 @@ class RobotInfo {
     name: string,
     options?: {
       img?: string;
+      full?: string;
       cadLink?: string;
       codeLink?: string;
       techBinder?: string;
@@ -41,7 +53,9 @@ class RobotInfo {
   ) {
     this.year = year;
     this.name = name;
+
     this.img = options?.img;
+    this.full = options?.full;
     this.cadLink = options?.cadLink;
     this.codeLink = options?.codeLink;
     this.techBinder = options?.techBinder;
@@ -57,6 +71,7 @@ const robots: RobotInfo[] = [
     weight: "112.5 lb",
     notes: "test",
     img: robot2023,
+    full: robot2023full,
     cadLink:
       "https://cad.onshape.com/documents/ba977eb0e20aee4635a57eaa/w/a56a7fbc56f14dbcbff30769",
     codeLink: "https://github.com/team401/2023-Robot-Code",
@@ -67,6 +82,7 @@ const robots: RobotInfo[] = [
     record: "59-21-1",
     weight: "124.8 lb",
     img: robot2022,
+    full: robot2022full,
     codeLink: "https://github.com/team401/2022-Robot-Code",
     cadLink:
       "https://cad.onshape.com/documents/489185223ddbfec8c89a2277/w/632bf353cba19a51e989f488",
@@ -74,24 +90,30 @@ const robots: RobotInfo[] = [
   new RobotInfo(2021, "Glycon", {
     record: "6-5-0",
     img: robot2021,
+    full: robot2021full,
     cadLink:
       "https://cad.onshape.com/documents/84707311327861b9fdce8a73/w/652c81d4db21c84dc91a591d",
   }),
   new RobotInfo(2020, "Leviathan"),
   new RobotInfo(2019, "Ouroboros", {
     img: robot2019,
+    full: robot2019full,
   }),
   new RobotInfo(2018, "Apophsis", {
     img: robot2018,
+    full: robot2018full,
   }),
   new RobotInfo(2017, "Phil", {
     img: robot2017,
+    full: robot2017full,
   }),
   new RobotInfo(2016, "Quetzalcoatl", {
     img: robot2016,
+    full: robot2016full,
   }),
   new RobotInfo(2015, "", {
     img: robot2015,
+    full: robot2015full,
   }),
 ];
 
@@ -104,11 +126,18 @@ export default function Robots() {
             {robots.map((robot) => (
               <Grid container key={robot.name} columnSpacing={3} sx={{ pt: 2 }}>
                 <Grid xs={12} item md={robot.img ? 6 : 0} maxWidth="100%">
-                  <img
-                    src={robot.img}
-                    loading="lazy"
-                    style={{ maxHeight: 500, maxWidth: "100%" }}
-                  ></img>
+                  <Zoom
+                    zoomImg={{
+                      src: "./img/robots/full/" + robot.year + ".png",
+                    }}
+                  >
+                    <img
+                      alt={robot.name}
+                      src={robot.img}
+                      loading="lazy"
+                      style={{ maxHeight: 500, maxWidth: "100%" }}
+                    />
+                  </Zoom>
                 </Grid>
                 <Grid xs={12} item md={robot.img ? 6 : 12}>
                   <Card
