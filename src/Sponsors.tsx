@@ -14,6 +14,10 @@ import schoolOfEd from "./img/sponsors/schoolOfEd.png";
 import blacksburgEye from "./img/sponsors/BlacksburgEye.png";
 import goodShepherd from "./img/sponsors/goodShepherd.png";
 import nest from "./img/sponsors/nest.png";
+import torc from "./img/sponsors/torc.png";
+import rtx from "./img/sponsors/rtx.png";
+import gentoo from "./img/sponsors/gentoo.png";
+import aci from "./img/sponsors/aci.png";
 
 class Sponsor {
   img: string;
@@ -48,23 +52,30 @@ const sponsorList: SponsorTier[] = [
       "https://www.blacksburgeye.com/"
     ),
   ]),
-  new SponsorTier("Silver Sponsors", 2, [
+  new SponsorTier("Silver Sponsors", 3, [
     new Sponsor(rev, "REV Robotics", "https://www.revrobotics.com/"),
     new Sponsor(
       haas,
       "Gene Haas Foundation",
       "https://ghaasfoundation.org/content/ghf/en/home.html"
     ),
+    new Sponsor(rtx, "RTX", "https://www.rtx.com/"),
+    new Sponsor(torc, "TORC Robotics", "https://torc.ai/"),
     new Sponsor(aep, "American Electric Power", "https://aep.com"),
     new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/"),
     new Sponsor(auvsi, "AUVSI", "https://www.auvsiridgeandvalley.org/"),
     new Sponsor(kroger, "Kroger", "https://kroger.com/"),
-  ]),
-  new SponsorTier("Copperhead Sponsors", 3, [
     new Sponsor(
       goodShepherd,
       "Good Shepherd Chuch of the Brethren",
       "https://www.goodshepherdblacksburg.org/"
+    ),
+  ]),
+  new SponsorTier("Copperhead Sponsors", 4, [
+    new Sponsor(
+      schoolOfEd,
+      "Virginia Tech School of Education",
+      "https://liberalarts.vt.edu/departments-and-schools/school-of-education.html"
     ),
     new Sponsor(
       nichols,
@@ -72,8 +83,9 @@ const sponsorList: SponsorTier[] = [
       "http://tammynicholsrealestate.com/"
     ),
     new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/"),
+    new Sponsor(gentoo, "Gentoo Technologies", "http://gentootech.com/"),
+    new Sponsor(aci, "ACI", "https://aciwebs.com/"),
   ]),
-  new SponsorTier("Special Thanks", 3, []),
 ];
 export default function Sponsors() {
   return (
@@ -102,7 +114,8 @@ export default function Sponsors() {
                 >
                   {tier.sponsors.map((sponsor) => (
                     <Grid
-                      xs={12}
+                      xs={12 / Math.ceil(tier.size / 2)}
+                      sm={12 / (tier.size - 1)}
                       container
                       item
                       justifyContent="center"
