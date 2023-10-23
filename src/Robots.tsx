@@ -38,6 +38,8 @@ class RobotInfo {
   weight?: string;
   record?: string;
   notes?: string;
+  awards?: string[];
+  events?: string[];
 
   constructor(
     year: number,
@@ -51,6 +53,8 @@ class RobotInfo {
       weight?: string;
       record?: string;
       notes?: string;
+      awards?: string[];
+      events?: string[];
     }
   ) {
     this.year = year;
@@ -64,6 +68,8 @@ class RobotInfo {
     this.weight = options?.weight;
     this.record = options?.record;
     this.notes = options?.notes;
+    this.awards = options?.awards;
+    this.events = options?.events;
   }
 }
 
@@ -135,11 +141,13 @@ const robots: RobotInfo[] = [
       "https://drive.google.com/drive/folders/1wz_eZ_hemPkTkRQ8PvtBEJDQy3kdJn9r?usp=share_link",
     codeLink: "https://github.com/team401/2016-Robot-Code",
   }),
-  new RobotInfo(2015, "", {
+  new RobotInfo(2015, "Power Surge", {
     img: robot2015,
     full: robot2015full,
+    record: "0-0 (18 matches played)",
     cadLink:
       "https://drive.google.com/drive/folders/1V04KOoUnonzY4b9hqrEj9zfMybDzheQb?usp=share_link",
+    notes: "Power Surge was named after the original name of Team 401.",
   }),
 ];
 
