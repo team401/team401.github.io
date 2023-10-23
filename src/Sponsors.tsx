@@ -45,7 +45,7 @@ export default function Sponsors() {
                 <Grid xs={12} item md={6}>
                   <Paper sx={{ p: 3, minHeight: "100%" }}>
                     <Typography
-                      variant="h4"
+                      variant="h5"
                       align="left"
                       color="text.secondary"
                       component="h1"

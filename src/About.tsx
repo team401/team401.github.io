@@ -3,9 +3,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Paper, Box, Typography } from "@mui/material";
 
-import pointing from "./img/pointing.png";
-import robotTesting from "./img/robotTesting.jpg";
-import teamPhoto from "./img/teamPhoto.jpg";
+import pointing from "./img/about/pointing.png";
+import robotTesting from "./img/about/robotTesting.jpg";
+import teamPhoto from "./img/about/teamPhoto.jpg";
 
 type aboutEntry = {
   img: string;
