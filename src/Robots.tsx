@@ -33,20 +33,28 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://drive.google.com/file/d/1XBMxCsUlEWbWIso0fsR4-QgTbwTDzjae/view?usp=share_link",
     events: [
-      new EventInfo("FIRST Chesapeake Blacksburg VA District Event", [
-        "Event Winner",
-        "Industrial Design Award",
-      ]),
-      new EventInfo("FIRST Chesapeake Glen Allen VA District Event", [
-        "Event Winner",
-        "FIRST Impact Award",
-      ]),
-      new EventInfo("FIRST Chesapeake District Championship", [
-        "Industrial Design Award",
-      ]),
-      new EventInfo("FIRST World Championship - Galileo Division", []),
-      new EventInfo("Blue Ridge Brawl", ["Event Winner"]),
-      new EventInfo("Rumble in the Roads", []),
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA District Event",
+        ["Event Winner", "Industrial Design Award"],
+        "2023vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Glen Allen VA District Event",
+        ["Event Winner", "FIRST Impact Award"],
+        "2023vagle"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Industrial Design Award"],
+        "2023chcmp"
+      ),
+      new EventInfo(
+        "FIRST World Championship - Galileo Division",
+        [],
+        "2023gal"
+      ),
+      new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2023vabrb"),
+      new EventInfo("Rumble in the Roads", [], "2023varr"),
     ],
   }),
   new RobotInfo(2022, "Jörmungandr ", {
@@ -60,18 +68,28 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://drive.google.com/file/d/14bgZD7nQk-9XXW4DcOFP1cOpHNvDAGn0/view?usp=share_link",
     events: [
-      new EventInfo("FIRST Chesapeake Richmond VA 3/05 Event", [
-        "Chairman's Award",
-      ]),
-      new EventInfo("FIRST Chesapeake Richmond VA 3/20 Event", [
-        "Event Winner",
-      ]),
-      new EventInfo("FIRST Chesapeake District Championship", [
-        "Industrial Design Award",
-      ]),
-      new EventInfo("FIRST World Championship - Galileo Division", []),
-      new EventInfo("Blue Ridge Brawl", ["Event Winner"]),
-      new EventInfo("Rumble in the Roads", ["Event Winner"]),
+      new EventInfo(
+        "FIRST Chesapeake Richmond VA 3/05 Event",
+        ["Chairman's Award"],
+        "2022va305"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Richmond VA 3/20 Event",
+        ["Event Winner"],
+        "2022va320"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Industrial Design Award"],
+        "2022chcmp"
+      ),
+      new EventInfo(
+        "FIRST World Championship - Galileo Division",
+        [],
+        "2022gal"
+      ),
+      new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2022vabrb"),
+      new EventInfo("Rumble in the Roads", ["Event Winner"], "2022varr"),
     ],
   }),
   new RobotInfo(2021, "Glycon", {
@@ -84,10 +102,12 @@ const robots: RobotInfo[] = [
       "https://drive.google.com/file/d/1O-RUZgj50lH8vMUX-ZaY8y-wQ7lLyuIa/view?usp=share_link",
     codeLink: "https://github.com/team401/2021-Robot-Code",
     events: [
-      new EventInfo("Infinite Rechage At Home Challenge - Cadmium Group", [
-        "Skills Competition Winner",
-      ]),
-      new EventInfo("CHSy Champs", []),
+      new EventInfo(
+        "Infinite Rechage At Home Challenge - Cadmium Group",
+        ["Skills Competition Winner"],
+        "2021irhcd"
+      ),
+      new EventInfo("CHSy Champs", [], "2021vachs"),
     ],
   }),
   new RobotInfo(2020, "Leviathan", {
@@ -98,9 +118,11 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://docs.google.com/spreadsheets/d/1XpBeeOpbmxH3wOLGNq6xpUi1ik0mAV4oYa5G_X_atjs/edit?usp=share_link",
     events: [
-      new EventInfo("FIRST Chesapeake Richmond VA District Event", [
-        "Autonomous Award",
-      ]),
+      new EventInfo(
+        "FIRST Chesapeake Richmond VA District Event",
+        ["Autonomous Award"],
+        "2020vagle"
+      ),
     ],
   }),
   new RobotInfo(2019, "Ouroboros", {
@@ -111,14 +133,20 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://docs.google.com/spreadsheets/d/1I-6ZXyRkmzfJNMDje_uYloxcl8N80nUArxrgwYMmwB4/edit?usp=sharing",
     events: [
-      new EventInfo("FIRST Chesapeake Portsmouth VA Event", []),
-      new EventInfo("FIRST Chesapeake Blacksburg VA Event", [
-        "Chairman's Award",
-      ]),
-      new EventInfo("FIRST Chesapeake District Championship", ["Event Winner"]),
-      new EventInfo("FIRST World Championship - Curie Division", []),
-      new EventInfo("Blue Ridge Brawl", ["Event Winner"]),
-      new EventInfo("Rumble in the Roads", ["Event Winner"]),
+      new EventInfo("FIRST Chesapeake Portsmouth VA Event", [], "2019vapor"),
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA Event",
+        ["Chairman's Award"],
+        "2019vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Event Winner"],
+        "2019chcmp"
+      ),
+      new EventInfo("FIRST World Championship - Curie Division", [], "2019cur"),
+      new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2019vabrb"),
+      new EventInfo("Rumble in the Roads", ["Event Winner"], "2019varr"),
     ],
   }),
   new RobotInfo(2018, "Apophsis", {
@@ -129,18 +157,22 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://docs.google.com/spreadsheets/d/1EEeoARwE_gVD-K3Rq7yFSZtw8TCNdIWoW9UrcANQ8vs/edit?usp=sharing",
     events: [
-      new EventInfo("FIRST Chesapeake Glen Allen VA Event", [
-        "Event Winner",
-        "Gracious Professionalism Award",
-      ]),
-      new EventInfo("FIRST Chesapeake Blacksburg VA Event", [
-        "Chairman's Award",
-      ]),
-      new EventInfo("FIRST Chesapeake District Championship", [
-        "Event Finalist",
-        "Judges' Award",
-      ]),
-      new EventInfo("FIRST World Championship - Daly Division", []),
+      new EventInfo(
+        "FIRST Chesapeake Glen Allen VA Event",
+        ["Event Winner", "Gracious Professionalism Award"],
+        "2018vagle"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA Event",
+        ["Chairman's Award"],
+        "2018vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Event Finalist", "Judges' Award"],
+        "2018chcmp"
+      ),
+      new EventInfo("FIRST World Championship - Daly Division", [], "2018dal"),
     ],
   }),
   new RobotInfo(2017, "Phil", {
@@ -153,19 +185,31 @@ const robots: RobotInfo[] = [
     techBinder:
       "https://docs.google.com/spreadsheets/d/19phOgF0MFvmUJsUwKOc-AYFOztHVuFnCOuwdu2-Yrjk/edit?usp=sharing",
     events: [
-      new EventInfo("FIRST Chesapeake Blacksburg VA Event", ["Quality Award"]),
-      new EventInfo("FIRST Chesapeake Portsmouth VA Event", [
-        "Engineering Inspiration Award",
-        "Safety Award",
-      ]),
-      new EventInfo("FIRST Chesapeake District Championship", [
-        "Engineering Inspiration Award",
-      ]),
-      new EventInfo("FIRST World Championship - Archimedes Division", []),
-      new EventInfo("Rumble in the Roads", [
-        "Event Finalist",
-        "Captain's Award",
-      ]),
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA Event",
+        ["Quality Award"],
+        "2017vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Portsmouth VA Event",
+        ["Engineering Inspiration Award", "Safety Award"],
+        "2017vapor"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Engineering Inspiration Award"],
+        "2017chcmp"
+      ),
+      new EventInfo(
+        "FIRST World Championship - Archimedes Division",
+        [],
+        "2017arc"
+      ),
+      new EventInfo(
+        "Rumble in the Roads",
+        ["Event Finalist", "Captain's Award"],
+        "2017varr"
+      ),
     ],
   }),
   new RobotInfo(2016, "Quetzalcoatl", {
@@ -176,10 +220,18 @@ const robots: RobotInfo[] = [
       "https://drive.google.com/drive/folders/1wz_eZ_hemPkTkRQ8PvtBEJDQy3kdJn9r?usp=share_link",
     codeLink: "https://github.com/team401/2016-Robot-Code",
     events: [
-      new EventInfo("FIRST Chesapeake Blacksburg VA Event", ["Imagery Award"]),
-      new EventInfo("FIRST Chesapeake Doswell VA Event", ["Event Finalist"]),
-      new EventInfo("FIRST Chesapeake District Championship", []),
-      new EventInfo("FIRST World Championship - Archimedes", []),
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA Event",
+        ["Imagery Award"],
+        "2016vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Doswell VA Event",
+        ["Event Finalist"],
+        "2016vados"
+      ),
+      new EventInfo("FIRST Chesapeake District Championship", [], "2016chcmp"),
+      new EventInfo("FIRST World Championship - Archimedes", [], "2016arc"),
     ],
   }),
   new RobotInfo(2015, "Power Surge", {
@@ -189,10 +241,11 @@ const robots: RobotInfo[] = [
     cadLink:
       "https://drive.google.com/drive/folders/1V04KOoUnonzY4b9hqrEj9zfMybDzheQb?usp=share_link",
     codeLink: "https://code.google.com/archive/p/team401/",
-    notes: "Power Surge was named after the original name of Team 401.",
+    notes:
+      "Power Surge was named after Team 401's original team name from 2000!",
     events: [
-      new EventInfo("Rock City Regional", []),
-      new EventInfo("Virginia Regional", []),
+      new EventInfo("Rock City Regional", [], "2015arfa"),
+      new EventInfo("Virginia Regional", [], "2015vari"),
     ],
   }),
 ];
@@ -266,7 +319,9 @@ export default function Robots() {
                                 color="text.secondary"
                                 component="h1"
                               >
-                                {event.eventName}
+                                <Link href={event.link} target="_blank">
+                                  {event.eventName}
+                                </Link>
                               </Typography>
                               <Typography
                                 variant="body1"
@@ -282,13 +337,13 @@ export default function Robots() {
                       )}
                       {robot.notes && (
                         <Typography
-                          variant="h5"
+                          variant="body1"
                           align="left"
                           color="text.secondary"
-                          component="h1"
+                          component="p"
                           padding={0}
                         >
-                          Notes: {robot.notes}
+                          {robot.notes}
                         </Typography>
                       )}
                     </CardContent>
@@ -299,6 +354,7 @@ export default function Robots() {
                             component={Link}
                             href={robot.cadLink}
                             variant="outlined"
+                            target="_blank"
                           >
                             CAD Model
                           </Button>
@@ -308,6 +364,7 @@ export default function Robots() {
                             component={Link}
                             href={robot.techBinder}
                             variant="outlined"
+                            target="_blank"
                           >
                             Tech Binder
                           </Button>
@@ -317,6 +374,7 @@ export default function Robots() {
                             component={Link}
                             href={robot.codeLink}
                             variant="outlined"
+                            target="_blank"
                           >
                             Robot Code
                           </Button>

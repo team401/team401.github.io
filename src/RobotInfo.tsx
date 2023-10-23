@@ -1,10 +1,12 @@
 export class EventInfo {
   eventName: string;
   awards: string[];
+  link: string;
 
-  constructor(eventName: string, awards: string[]) {
+  constructor(eventName: string, awards: string[], link?: string) {
     this.eventName = eventName;
     this.awards = awards;
+    this.link = "https://www.thebluealliance.com/event/" + link;
   }
 }
 
