@@ -45,7 +45,7 @@ function TeamAppBar(props: { pages: PageType[] }) {
   );
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" style={{ background: "secondary" }}>
       <Container disableGutters maxWidth={false}>
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", md: "flex" }, paddingLeft: 2 }}>

@@ -6,6 +6,7 @@ import { Paper, Box, Typography } from "@mui/material";
 import pointing from "./img/about/pointing.png";
 import robotTesting from "./img/about/robotTesting.jpg";
 import teamPhoto from "./img/about/teamPhoto.jpg";
+import { useTheme } from "@mui/material/styles";
 
 type aboutEntry = {
   img: string;
@@ -50,6 +51,8 @@ const aboutSections: aboutEntry[] = [
 ];
 
 export default function About() {
+  const theme = useTheme();
+
   return (
     <>
       <img src={teamPhoto} loading="lazy" width={"100%"}></img>
@@ -60,14 +63,17 @@ export default function About() {
               <Typography
                 variant="h3"
                 align="center"
-                color="text.secondary"
                 component="h1"
-                sx={{ mb: 2 }}
+                sx={{
+                  mb: 2,
+                  fontWeight: 900,
+                  color: theme.palette.primary.main,
+                }}
               >
                 FRC Team 401: Copperhead Robotics
               </Typography>
               <Typography
-                variant="h5"
+                variant="h4"
                 align="center"
                 color="text.secondary"
                 component="h1"

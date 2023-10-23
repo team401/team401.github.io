@@ -2,6 +2,9 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import { Grid, Link, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Divider } from "@mui/material";
+
 import kroger from "./img/sponsors/kroger.png";
 import haas from "./img/sponsors/haas.png";
 import bae from "./img/sponsors/bae.png";
@@ -90,6 +93,8 @@ const sponsorList: SponsorTier[] = [
   ]),
 ];
 export default function Sponsors() {
+  const theme = useTheme();
+
   return (
     <>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
@@ -97,7 +102,14 @@ export default function Sponsors() {
           <Grid container rowSpacing={5} columnSpacing={1}>
             {sponsorList.map((tier) => (
               <Box key={tier.name}>
-                <Grid container item lg={12} sx={{ pt: 5 }} maxWidth="100%">
+                <Grid
+                  container
+                  item
+                  lg={12}
+                  sx={{ pt: 6, pb: 1 }}
+                  maxWidth="100%"
+                  justifyContent="center"
+                >
                   <Typography
                     variant="h3"
                     align="left"
@@ -107,6 +119,13 @@ export default function Sponsors() {
                     {tier.name}
                   </Typography>
                 </Grid>
+                <Divider
+                  sx={{
+                    mb: 6,
+                    borderBottomWidth: 2,
+                    background: "#333",
+                  }}
+                />
                 <Grid
                   container
                   item

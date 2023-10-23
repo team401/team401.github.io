@@ -312,6 +312,7 @@ export default function Robots() {
                                 mb: 0,
                                 pt: 0,
                               }}
+                              key={event.eventName}
                             >
                               <Typography
                                 variant="h6"
