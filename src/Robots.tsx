@@ -14,6 +14,8 @@ import robot2022 from "./img/robots/small2022.png";
 import robot2022full from "./img/robots/big/big2022.png";
 import robot2021 from "./img/robots/small2021.png";
 import robot2021full from "./img/robots/big/big2021.png";
+import robot2020 from "./img/robots/small2020.png";
+import robot2020full from "./img/robots/big/big2020.png";
 import robot2019 from "./img/robots/small2019.png";
 import robot2019full from "./img/robots/big/big2019.png";
 import robot2018 from "./img/robots/small2018.png";
@@ -99,26 +101,45 @@ const robots: RobotInfo[] = [
       "https://drive.google.com/file/d/1O-RUZgj50lH8vMUX-ZaY8y-wQ7lLyuIa/view?usp=share_link",
     codeLink: "https://github.com/team401/2021-Robot-Code",
   }),
-  new RobotInfo(2020, "Leviathan"),
+  new RobotInfo(2020, "Leviathan", {
+    record: "7-8-0",
+    img: robot2020,
+    full: robot2020full,
+    codeLink: "https://github.com/team401/2020-Robot-Code",
+  }),
   new RobotInfo(2019, "Ouroboros", {
     img: robot2019,
     full: robot2019full,
+    record: "55-34-3",
+    codeLink: "https://github.com/team401/2019-Robot-Code",
   }),
   new RobotInfo(2018, "Apophsis", {
     img: robot2018,
     full: robot2018full,
+    record: "36-27-0",
+    codeLink: "https://github.com/team401/2018-Robot-Code",
   }),
   new RobotInfo(2017, "Phil", {
     img: robot2017,
     full: robot2017full,
+    record: "35-29-1",
+    cadLink:
+      "https://drive.google.com/drive/folders/1kwPP_zcAugBJMBr_K-Lspbv3sBOXUBAn?usp=share_link",
+    codeLink: "https://github.com/team401/2017-Robot-Code",
   }),
   new RobotInfo(2016, "Quetzalcoatl", {
     img: robot2016,
     full: robot2016full,
+    record: "38-22-0",
+    cadLink:
+      "https://drive.google.com/drive/folders/1wz_eZ_hemPkTkRQ8PvtBEJDQy3kdJn9r?usp=share_link",
+    codeLink: "https://github.com/team401/2016-Robot-Code",
   }),
   new RobotInfo(2015, "", {
     img: robot2015,
     full: robot2015full,
+    cadLink:
+      "https://drive.google.com/drive/folders/1V04KOoUnonzY4b9hqrEj9zfMybDzheQb?usp=share_link",
   }),
 ];
 
