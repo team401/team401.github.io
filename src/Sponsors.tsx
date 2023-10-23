@@ -16,6 +16,7 @@ import goodShepherd from "./img/sponsors/goodShepherd.png";
 import nest from "./img/sponsors/nest.png";
 import torc from "./img/sponsors/torc.png";
 import rtx from "./img/sponsors/rtx.png";
+import corning from "./img/sponsors/corning.png";
 import gentoo from "./img/sponsors/gentoo.png";
 import aci from "./img/sponsors/aci.png";
 
@@ -60,6 +61,7 @@ const sponsorList: SponsorTier[] = [
       "https://ghaasfoundation.org/content/ghf/en/home.html"
     ),
     new Sponsor(rtx, "RTX", "https://www.rtx.com/"),
+    new Sponsor(corning, "Corning", "https://www.corning.com"),
     new Sponsor(torc, "TORC Robotics", "https://torc.ai/"),
     new Sponsor(aep, "American Electric Power", "https://aep.com"),
     new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/"),
