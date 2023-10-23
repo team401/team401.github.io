@@ -94,6 +94,7 @@ const robots: RobotInfo[] = [
     record: "0-0 (18 matches played)",
     cadLink:
       "https://drive.google.com/drive/folders/1V04KOoUnonzY4b9hqrEj9zfMybDzheQb?usp=share_link",
+    codeLink: "https://code.google.com/archive/p/team401/",
     notes: "Power Surge was named after the original name of Team 401.",
   }),
 ];
