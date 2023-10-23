@@ -1,3 +1,13 @@
+export class EventInfo {
+  eventName: string;
+  awards: string[];
+
+  constructor(eventName: string, awards: string[]) {
+    this.eventName = eventName;
+    this.awards = awards;
+  }
+}
+
 export default class RobotInfo {
   year: number;
   name: string;
@@ -9,8 +19,7 @@ export default class RobotInfo {
   weight?: string;
   record?: string;
   notes?: string;
-  awards?: string[];
-  events?: string[];
+  events?: EventInfo[];
 
   constructor(
     year: number,
@@ -24,8 +33,7 @@ export default class RobotInfo {
       weight?: string;
       record?: string;
       notes?: string;
-      awards?: string[];
-      events?: string[];
+      events?: EventInfo[];
     }
   ) {
     this.year = year;
@@ -39,7 +47,6 @@ export default class RobotInfo {
     this.weight = options?.weight;
     this.record = options?.record;
     this.notes = options?.notes;
-    this.awards = options?.awards;
     this.events = options?.events;
   }
 }
