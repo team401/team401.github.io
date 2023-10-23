@@ -112,18 +112,24 @@ const robots: RobotInfo[] = [
     img: robot2020,
     full: robot2020full,
     codeLink: "https://github.com/team401/2020-Robot-Code",
+    techBinder:
+      "https://docs.google.com/spreadsheets/d/1XpBeeOpbmxH3wOLGNq6xpUi1ik0mAV4oYa5G_X_atjs/edit?usp=share_link",
   }),
   new RobotInfo(2019, "Ouroboros", {
     img: robot2019,
     full: robot2019full,
     record: "55-34-3",
     codeLink: "https://github.com/team401/2019-Robot-Code",
+    techBinder:
+      "https://docs.google.com/spreadsheets/d/1I-6ZXyRkmzfJNMDje_uYloxcl8N80nUArxrgwYMmwB4/edit?usp=sharing",
   }),
   new RobotInfo(2018, "Apophsis", {
     img: robot2018,
     full: robot2018full,
     record: "36-27-0",
     codeLink: "https://github.com/team401/2018-Robot-Code",
+    techBinder:
+      "https://docs.google.com/spreadsheets/d/1EEeoARwE_gVD-K3Rq7yFSZtw8TCNdIWoW9UrcANQ8vs/edit?usp=sharing",
   }),
   new RobotInfo(2017, "Phil", {
     img: robot2017,
@@ -132,6 +138,8 @@ const robots: RobotInfo[] = [
     cadLink:
       "https://drive.google.com/drive/folders/1kwPP_zcAugBJMBr_K-Lspbv3sBOXUBAn?usp=share_link",
     codeLink: "https://github.com/team401/2017-Robot-Code",
+    techBinder:
+      "https://docs.google.com/spreadsheets/d/19phOgF0MFvmUJsUwKOc-AYFOztHVuFnCOuwdu2-Yrjk/edit?usp=sharing",
   }),
   new RobotInfo(2016, "Quetzalcoatl", {
     img: robot2016,
