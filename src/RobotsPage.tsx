@@ -16,7 +16,7 @@ import CardContent from "@mui/material/CardContent";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import { robots } from "./RobotInfo";
+import { robots } from "./RobotsData";
 
 export default function Robots() {
   return (

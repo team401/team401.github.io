@@ -8,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import YoutubeIcon from "@mui/icons-material/YouTube";
 import theme from "./theme";
 
 const socials = [
@@ -26,6 +27,10 @@ const socials = [
   {
     icon: <TwitterIcon fontSize="large" />,
     link: "https://twitter.com/frcteam401",
+  },
+  {
+    icon: <YoutubeIcon fontSize="large" />,
+    link: "https://www.youtube.com/@FRCTeam401CopperheadRobotics",
   },
 ];
 
