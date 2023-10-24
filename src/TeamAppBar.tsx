@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
-import { List, ListItemButton, ListItemText } from "@mui/material";
+import { Divider, List, ListItemButton, ListItemText } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import logo from "./img/logo_white.png";
@@ -51,21 +51,28 @@ function TeamAppBar(props: { pages: PageType[] }) {
           <Box sx={{ display: { xs: "none", md: "flex" }, paddingLeft: 2 }}>
             {logoImage}
           </Box>
-          <Drawer
-            anchor="left"
-            open={open}
-            onClose={toggleDrawer(false)}
-            sx={{ minWidth: 100 }}
-          >
-            <List component="nav" onClick={toggleDrawer(false)}>
+          <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+            <List
+              component="nav"
+              onClick={toggleDrawer(false)}
+              sx={{ minWidth: 200 }}
+            >
               {props.pages.map((page) => (
-                <ListItemButton
-                  component={Link}
-                  to={page.path}
-                  key={page.title}
-                >
-                  <ListItemText primary={page.title} />
-                </ListItemButton>
+                <>
+                  <ListItemButton
+                    component={Link}
+                    to={page.path}
+                    key={page.title}
+                  >
+                    <ListItemText
+                      primary={page.title}
+                      primaryTypographyProps={{
+                        fontSize: 18,
+                      }}
+                    />
+                  </ListItemButton>
+                  <Divider />
+                </>
               ))}
             </List>
           </Drawer>
