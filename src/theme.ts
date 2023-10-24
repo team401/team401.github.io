@@ -4,6 +4,21 @@ import { grey } from '@mui/material/colors';
 
 // A custom theme for this app
 const theme = createTheme({
+  typography: {
+    fontFamily: [
+      '"Helvetica Neue"',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+
   palette: {
     primary: {
       main: '#861f41',
