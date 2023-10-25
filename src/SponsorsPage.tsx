@@ -18,7 +18,7 @@ export default function Sponsors() {
         columnSpacing={{ xs: 0, sm: 0, md: 1 }}
         justifyContent="center"
       >
-        <Grid item xs={12} md={9}>
+        <Grid item xs={12}>
           <Card sx={{ p: 2 }}>
             <Typography
               variant="h3"
@@ -46,6 +46,7 @@ export default function Sponsors() {
               align="left"
               color="text.secondary"
               component="h1"
+              paddingBottom={3}
             >
               We're always excited to gain new sponsors, please reach out if you
               are interested in supporting the team!
