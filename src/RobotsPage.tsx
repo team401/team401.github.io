@@ -35,7 +35,7 @@ export default function Robots() {
                     <img
                       src={robot.img}
                       loading="lazy"
-                      style={{ maxHeight: 500, maxWidth: "100%" }}
+                      style={{ maxHeight: 400, maxWidth: "90%" }}
                     />
                   </Zoom>
                 </Grid>
@@ -83,7 +83,7 @@ export default function Robots() {
                               key={event.eventName}
                             >
                               <Typography
-                                variant="h6"
+                                variant="body1"
                                 align="left"
                                 color="text.secondary"
                                 component="h1"

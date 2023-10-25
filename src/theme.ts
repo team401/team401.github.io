@@ -6,7 +6,7 @@ import { grey } from '@mui/material/colors';
 const theme = createTheme({
   typography: {
     fontFamily: [
-      '"Helvetica Neue"',
+      'Montserrat',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',

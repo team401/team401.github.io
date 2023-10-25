@@ -16,28 +16,30 @@ export default function Sponsors() {
         <Grid item xs={12} md={9}>
           <Card sx={{ p: 2 }}>
             <Typography
-              variant="h3"
+              variant="h4"
               align="left"
               color="text.secondary"
               component="h1"
               textAlign="center"
               paddingBottom={1}
+              paddingTop={2}
             >
               Sponsors
             </Typography>
             <Typography
-              variant="h5"
+              variant="body1"
               align="left"
               color="text.secondary"
               component="h1"
               paddingBottom={2}
+              paddingTop={2}
             >
-              Team 401 couldn't exist without the generous monetary, material,
-              and mentorship support from all of our sponsors. We're thankful
+              Team 401 could not exist without the generous monetary, material,
+              and mentorship support from all of our sponsors. We are thankful
               for the extensive support that we receive from our community.
             </Typography>
             <Typography
-              variant="h5"
+              variant="body1"
               align="left"
               color="text.secondary"
               component="h1"
@@ -96,7 +98,7 @@ export default function Sponsors() {
                   sx={{ pb: 4 }}
                 >
                   <Link href={sponsor.link} target="_blank">
-                    <img src={sponsor.img} loading="lazy" width="100%"></img>
+                    <img src={sponsor.img} loading="lazy" width="75%"></img>
                   </Link>
                 </Grid>
               ))}

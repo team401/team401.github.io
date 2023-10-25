@@ -65,7 +65,7 @@ export default function About() {
                 align="center"
                 component="h1"
                 sx={{
-                  mb: 2,
+                  m: 7,
                   fontWeight: 900,
                   color: theme.palette.primary.main,
                 }}
@@ -77,6 +77,10 @@ export default function About() {
                 align="center"
                 color="text.secondary"
                 component="h1"
+                sx={{
+                  m: 2,
+                  color: theme.palette.primary.main,
+                }}
               >
                 "Docendo Discimus" - By Teaching, We Learn.
               </Typography>
