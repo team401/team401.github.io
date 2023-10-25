@@ -6,8 +6,8 @@ import { ResourcesList } from "./ResourcesData";
 
 export default function Resources() {
   return (
-    <Container disableGutters maxWidth="lg" sx={{ pt: 4 }}>
-      <Card sx={{ mb: 2, p: 2 }}>
+    <Container disableGutters maxWidth="lg" sx={{ pt: 5 }}>
+      <Card sx={{ mb: 4, p: 2, mx: 2 }}>
         <Typography
           variant="h3"
           align="left"
@@ -32,7 +32,7 @@ export default function Resources() {
         </Typography>
       </Card>
       {ResourcesList.map((section) => (
-        <Card sx={{ mb: 3, p: 2 }}>
+        <Card sx={{ mb: 3, p: 2, mx: 2 }}>
           <Typography
             variant="h4"
             align="left"

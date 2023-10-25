@@ -23,10 +23,25 @@ export default function Robots() {
     <>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <Box textAlign="center">
-          <Grid container rowSpacing={5} columnSpacing={1} sx={{ pt: 5 }}>
+          <Grid
+            container
+            rowSpacing={{ xs: 7 }}
+            columnSpacing={{ xs: 0, md: 1 }}
+            sx={{ pt: 5 }}
+          >
             {robots.map((robot) => (
-              <Grid container key={robot.name} columnSpacing={3} sx={{ pt: 2 }}>
-                <Grid xs={12} item md={robot.img ? 6 : 0} maxWidth="100%">
+              <Grid
+                container
+                key={robot.name}
+                columnSpacing={{ xs: 0, md: 3 }}
+                sx={{ pt: 5 }}
+              >
+                <Grid
+                  xs={12}
+                  item
+                  md={robot.img ? 6 : 0}
+                  marginBottom={{ xs: 1, md: 0 }}
+                >
                   <Zoom
                     zoomImg={{
                       src: robot.full,
@@ -34,11 +49,16 @@ export default function Robots() {
                   >
                     <img
                       src={robot.img}
-                      style={{ maxHeight: 500, maxWidth: "100%" }}
+                      style={{ height: "100%", maxWidth: "100%" }}
                     />
                   </Zoom>
                 </Grid>
-                <Grid xs={12} item md={robot.img ? 6 : 12}>
+                <Grid
+                  xs={12}
+                  item
+                  md={robot.img ? 6 : 12}
+                  marginBottom={{ xs: 5, md: 0 }}
+                >
                   <Card
                     sx={{
                       minHeight: "100%",

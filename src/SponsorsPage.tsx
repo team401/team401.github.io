@@ -15,9 +15,8 @@ export default function Sponsors() {
       <Grid
         container
         rowSpacing={5}
-        columnSpacing={1}
+        columnSpacing={{ xs: 0, sm: 0, md: 1 }}
         justifyContent="center"
-        sx={{ mx: 1 }}
       >
         <Grid item xs={12} md={9}>
           <Card sx={{ p: 2 }}>
