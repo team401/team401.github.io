@@ -3,14 +3,14 @@ import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import TeamAppBar from "./TeamAppBar";
-import About from "./About";
+import About from "./AboutPage";
 import Footer from "./Footer";
-import Outreach from "./Outreach";
-import Resources from "./Resources";
+import Outreach from "./OutreachPage";
+import Resources from "./ResourcesPage";
 import Sponsors from "./SponsorsPage";
 import Involved from "./Involved";
 import Robots from "./RobotsPage";
-import Coalition from "./Coalition";
+import Coalition from "./CoalitionPage";
 
 export type PageType = {
   path: string;

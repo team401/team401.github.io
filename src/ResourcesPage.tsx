@@ -25,9 +25,10 @@ export default function Resources() {
           component="h1"
           paddingBottom={2}
         >
-          Sharing resources helps FRC teams to be more organized and efficient
-          in planning, design, and outreach. We're happy to share some of our
-          favorite resources that we use to stay on track every year.
+          Sharing resources helps FRC teams be more organized and efficient in
+          planning, design, manufacturing, and outreach. We're happy to share
+          some of our favorite resources that we use to stay informed and stay
+          on track.
         </Typography>
       </Card>
       {ResourcesList.map((section) => (

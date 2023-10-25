@@ -82,7 +82,7 @@ export const ResourcesList: ResourceSection[] = [
       ),
       new Resource(
         "https://docs.google.com/spreadsheets/d/1a0TK5J_OTV1hOVL-Qj_CP3aYUR3jRqawvgHWTQ2aMPQ/edit?usp=sharing",
-        "Team 401 Battery BOM",
+        "Team 401 Battery Bill Of Materials",
         "Our preferred battery construction parts and where to buy them.",
         batteryBOM
       ),
