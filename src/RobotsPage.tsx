@@ -34,7 +34,6 @@ export default function Robots() {
                   >
                     <img
                       src={robot.img}
-                      loading="lazy"
                       style={{ maxHeight: 500, maxWidth: "100%" }}
                     />
                   </Zoom>
@@ -46,6 +45,9 @@ export default function Robots() {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
+                      mx: 1,
+                      px: 1,
+                      pb: 1,
                     }}
                   >
                     <CardContent sx={{ minHeight: "100%" }}>

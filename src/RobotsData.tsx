@@ -163,7 +163,7 @@ export const robots: RobotInfo[] = [
       new EventInfo("CHSy Champs", [], "2021vachs"),
     ],
   }),
-  new RobotInfo(2020, "Leviathan", {
+  new RobotInfo(2020, "Mamba", {
     record: "7-8-0",
     img: robot2020,
     full: robot2020full,
@@ -208,7 +208,7 @@ export const robots: RobotInfo[] = [
       new EventInfo("Rumble in the Roads", ["Event Winner"], "2019varr"),
     ],
   }),
-  new RobotInfo(2018, "Apophsis", {
+  new RobotInfo(2018, "Apophis", {
     record: "36-27-0",
     img: robot2018,
     full: robot2018full,

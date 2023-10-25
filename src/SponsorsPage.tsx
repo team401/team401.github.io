@@ -1,7 +1,7 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { Card, Grid, Link, Typography } from "@mui/material";
+import { Button, Card, Grid, Link, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Divider } from "@mui/material";
 
@@ -12,7 +12,13 @@ export default function Sponsors() {
 
   return (
     <Container maxWidth="lg" sx={{ pt: 4 }}>
-      <Grid container rowSpacing={5} columnSpacing={1} justifyContent="center">
+      <Grid
+        container
+        rowSpacing={5}
+        columnSpacing={1}
+        justifyContent="center"
+        sx={{ mx: 1 }}
+      >
         <Grid item xs={12} md={9}>
           <Card sx={{ p: 2 }}>
             <Typography
@@ -45,6 +51,40 @@ export default function Sponsors() {
               We're always excited to gain new sponsors, please reach out if you
               are interested in supporting the team!
             </Typography>
+            <Stack direction="row" justifyContent="center">
+              <Button
+                component={Link}
+                href="https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing"
+                size="large"
+                variant="contained"
+                sx={{ mt: 2 }}
+              >
+                <Typography
+                  variant="h5"
+                  align="left"
+                  color="white"
+                  component="h1"
+                >
+                  Sponsor Flyer
+                </Typography>
+              </Button>
+              <Button
+                component={Link}
+                href="mailto:401frc@ygmail.com"
+                size="large"
+                variant="contained"
+                sx={{ mt: 2, ml: 2 }}
+              >
+                <Typography
+                  variant="h5"
+                  align="left"
+                  color="white"
+                  component="h1"
+                >
+                  Email Us
+                </Typography>
+              </Button>
+            </Stack>
           </Card>
         </Grid>
         {SponsorList.map((tier) => (
@@ -96,7 +136,7 @@ export default function Sponsors() {
                   sx={{ pb: 4 }}
                 >
                   <Link href={sponsor.link} target="_blank">
-                    <img src={sponsor.img} loading="lazy" width="100%"></img>
+                    <img src={sponsor.img} width="100%"></img>
                   </Link>
                 </Grid>
               ))}
