@@ -42,7 +42,7 @@ class SponsorTier {
 }
 
 export const SponsorList: SponsorTier[] = [
-  new SponsorTier("Gold Sponsors", 2, [
+  new SponsorTier("Gold Sponsors", 1, [
     new Sponsor(mcps, "Montgomery County Public Schools", "https://mcps.org"),
   ]),
   new SponsorTier("Silver Sponsors", 3, [
