@@ -39,8 +39,8 @@ export default function Sponsors() {
               paddingBottom={2}
               paddingTop={2}
             >
-              Team 401 could not exist without the generous monetary, material,
-              and mentorship support from all of our sponsors. We are thankful
+              Team 401 couldn't exist without the generous monetary, material,
+              and mentorship support from all of our sponsors. We're thankful
               for the extensive support that we receive from our community.
             </Typography>
             <Typography

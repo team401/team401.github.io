@@ -132,7 +132,7 @@ export default function Robots() {
                           align="left"
                           color="text.secondary"
                           component="p"
-                          padding={0}
+                          paddingTop={1}
                         >
                           <b>Notes: </b>
                           {robot.notes}

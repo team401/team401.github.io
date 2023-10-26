@@ -15,6 +15,7 @@ import rtx from "./img/sponsors/rtx.png";
 import corning from "./img/sponsors/corning.png";
 import gentoo from "./img/sponsors/gentoo.png";
 import aci from "./img/sponsors/aci.png";
+import intuitive from "./img/sponsors/intuitive.png";
 
 class Sponsor {
   img: string;
@@ -62,6 +63,11 @@ export const SponsorList: SponsorTier[] = [
     new Sponsor(aep, "American Electric Power", "https://aep.com"),
     new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/"),
     new Sponsor(auvsi, "AUVSI", "https://www.auvsiridgeandvalley.org/"),
+    new Sponsor(
+      intuitive,
+      "Intuitive Foundation",
+      "https://www.intuitive-foundation.org/first-robotics/"
+    ),
     new Sponsor(kroger, "Kroger", "https://kroger.com/"),
     new Sponsor(
       goodShepherd,

@@ -11,6 +11,7 @@ import Sponsors from "./SponsorsPage";
 import Involved from "./Involved";
 import Robots from "./RobotsPage";
 import Coalition from "./CoalitionPage";
+import AboutFirst from "./FirstPage";
 
 export type PageType = {
   path: string;
@@ -19,7 +20,8 @@ export type PageType = {
 };
 
 const pages: PageType[] = [
-  { path: "/", title: "About", elem: <About /> },
+  { path: "/", title: "About Us", elem: <About /> },
+  { path: "/first", title: "About FIRST", elem: <AboutFirst /> },
   { path: "/involved", title: "Get Involved", elem: <Involved /> },
   { path: "/outreach", title: "Outreach", elem: <Outreach /> },
   { path: "/robots", title: "Robots", elem: <Robots /> },
