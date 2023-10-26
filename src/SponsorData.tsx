@@ -44,11 +44,6 @@ class SponsorTier {
 export const SponsorList: SponsorTier[] = [
   new SponsorTier("Gold Sponsors", 2, [
     new Sponsor(mcps, "Montgomery County Public Schools", "https://mcps.org"),
-    new Sponsor(
-      blacksburgEye,
-      "Blacksburg Eye Associates",
-      "https://www.blacksburgeye.com/"
-    ),
   ]),
   new SponsorTier("Silver Sponsors", 3, [
     new Sponsor(rev, "REV Robotics", "https://www.revrobotics.com/"),
@@ -60,6 +55,11 @@ export const SponsorList: SponsorTier[] = [
     new Sponsor(rtx, "RTX", "https://www.rtx.com/"),
     new Sponsor(corning, "Corning", "https://www.corning.com"),
     new Sponsor(torc, "TORC Robotics", "https://torc.ai/"),
+    new Sponsor(
+      blacksburgEye,
+      "Blacksburg Eye Associates",
+      "https://www.blacksburgeye.com/"
+    ),
     new Sponsor(aep, "American Electric Power", "https://aep.com"),
     new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/"),
     new Sponsor(auvsi, "AUVSI", "https://www.auvsiridgeandvalley.org/"),
