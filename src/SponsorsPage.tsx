@@ -21,7 +21,7 @@ export default function Sponsors() {
         <Grid item xs={12}>
           <Card sx={{ p: 2 }}>
             <Typography
-              variant="h4"
+              variant="h3"
               align="left"
               color="text.secondary"
               component="h1"
@@ -32,7 +32,7 @@ export default function Sponsors() {
               Sponsors
             </Typography>
             <Typography
-              variant="body1"
+              variant="h6"
               align="left"
               color="text.secondary"
               component="h1"
@@ -44,7 +44,7 @@ export default function Sponsors() {
               for the extensive support that we receive from our community.
             </Typography>
             <Typography
-              variant="body1"
+              variant="h6"
               align="left"
               color="text.secondary"
               component="h1"

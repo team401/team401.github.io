@@ -49,7 +49,6 @@ export default function Robots() {
                   >
                     <img
                       src={robot.img}
-                      loading="lazy"
                       style={{ maxHeight: 400, maxWidth: "90%" }}
                     />
                   </Zoom>
@@ -106,7 +105,7 @@ export default function Robots() {
                               key={event.eventName}
                             >
                               <Typography
-                                variant="body1"
+                                variant="h6"
                                 align="left"
                                 color="text.secondary"
                                 component="h1"

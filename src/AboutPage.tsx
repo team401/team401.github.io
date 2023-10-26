@@ -79,7 +79,6 @@ export default function About() {
                 component="h1"
                 sx={{
                   m: 2,
-                  color: theme.palette.primary.main,
                 }}
               >
                 "Docendo Discimus" - By Teaching, We Learn.

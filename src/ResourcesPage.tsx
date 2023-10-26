@@ -64,12 +64,12 @@ export default function Resources() {
                 >
                   <>
                     <Link href={resource.link} target="_blank">
-                      <Typography variant="h6" align="left" component="h1">
+                      <Typography variant="h5" align="left" component="h1">
                         {resource.title}
                       </Typography>
                     </Link>
                     <Typography
-                      variant="body1"
+                      variant="h6"
                       align="left"
                       color="text.secondary"
                       component="h1"

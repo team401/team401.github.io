@@ -111,7 +111,8 @@ function TeamAppBar(props: { pages: PageType[] }) {
                 to={page.path}
                 key={page.title}
                 onClick={toggleDrawer(false)}
-                sx={{ my: 2, color: "white", display: "block" }}
+                size="large"
+                sx={{ my: 0, py: 0, color: "white", display: "block" }}
               >
                 {page.title}
               </Button>
