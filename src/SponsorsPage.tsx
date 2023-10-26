@@ -57,6 +57,7 @@ export default function Sponsors() {
               <Button
                 component={Link}
                 href="https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing"
+                target="_blank"
                 size="large"
                 variant="contained"
                 sx={{ mt: 2 }}
@@ -72,7 +73,8 @@ export default function Sponsors() {
               </Button>
               <Button
                 component={Link}
-                href="mailto:401frc@ygmail.com"
+                href="mailto:401frc@gmail.com"
+                target="_blank"
                 size="large"
                 variant="contained"
                 sx={{ mt: 2, ml: 2 }}
