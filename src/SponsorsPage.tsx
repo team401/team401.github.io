@@ -138,7 +138,7 @@ export default function Sponsors() {
                   sx={{ pb: 4 }}
                 >
                   <Link href={sponsor.link} target="_blank">
-                    <img src={sponsor.img} loading="lazy" width="75%"></img>
+                    <img src={sponsor.img} width="100%"></img>
                   </Link>
                 </Grid>
               ))}

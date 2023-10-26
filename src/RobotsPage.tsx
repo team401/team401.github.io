@@ -49,7 +49,7 @@ export default function Robots() {
                   >
                     <img
                       src={robot.img}
-                      style={{ maxHeight: 400, maxWidth: "90%" }}
+                      style={{ maxHeight: 500, maxWidth: "100%" }}
                     />
                   </Zoom>
                 </Grid>
