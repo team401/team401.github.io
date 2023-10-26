@@ -19,7 +19,7 @@ export default function Resources() {
           Resources
         </Typography>
         <Typography
-          variant="h5"
+          variant="h6"
           align="left"
           color="text.secondary"
           component="h1"
