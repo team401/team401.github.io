@@ -74,7 +74,7 @@ class RobotInfo {
 
 export const robots: RobotInfo[] = [
   new RobotInfo(2023, "Mušḫuššu", {
-    record: "52-23-1",
+    record: "58-28-2",
     img: robot2023,
     full: robot2023full,
     weight: "112.5 lb",
