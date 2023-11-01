@@ -6,6 +6,7 @@ import firstChoice from "./img/resources/firstChoice.png";
 import taxFilings from "./img/resources/taxFilings.png";
 import grantTracking from "./img/resources/grantTracking.png";
 import batteryBOM from "./img/resources/batteryBOM.png";
+import calendar from ".img/resources/calendar.png";
 
 class Resource {
   link: string;
@@ -43,6 +44,12 @@ export const ResourcesList: ResourceSection[] = [
         "Build Season Planning",
         "A collaborative task planning system with Gantt charts, personal task overviews, and daily agendas.",
         gantt
+      ),
+      new Resource(
+        "https://docs.google.com/spreadsheets/d/1bVIsDLAlxXRHYyx7HuscF0Qd99O5NuEZg5oNhC3XlEU/edit?usp=sharing",
+        "Team Planning Calendar",
+        "An automated calendar to visually display events on a monthly view.",
+        calendar
       ),
       new Resource(
         "https://docs.google.com/spreadsheets/d/1se53XvWg8KnN6T9wWMKm41tx3NCOy2c5cx84maoPmjs/edit#gid=1928859039",
