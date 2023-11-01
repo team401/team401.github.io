@@ -6,7 +6,7 @@ import firstChoice from "./img/resources/firstChoice.png";
 import taxFilings from "./img/resources/taxFilings.png";
 import grantTracking from "./img/resources/grantTracking.png";
 import batteryBOM from "./img/resources/batteryBOM.png";
-import calendar from ".img/resources/calendar.png";
+import calendar from "./img/resources/calendar.png";
 
 class Resource {
   link: string;
