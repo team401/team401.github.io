@@ -5,6 +5,7 @@ import fabrication from "./img/involved/fabrication.jpg";
 import design from "./img/involved/design.jpg";
 import controls from "./img/involved/controls.jpg";
 import outreach from "./img/involved/outreach.jpg";
+import { Link } from "@mui/material";
 
 type involvedEntry = {
   img: string;
@@ -34,11 +35,12 @@ export const involvedSections: involvedEntry[] = [
     heading: "Fabrication",
     para: (
       <>
-        Our fabrication subteam are experts at manufacturing, having access to
-        our shop's array of machines. We use a CNC router, a 30,000 PSI water
-        jet with garnet cutting media, plasma cutter, lathe, 3D printer, and a
-        variety of hand tools to manufacture precision parts that hold up in
-        competition.
+        Our fabrication subteam members are responsible for manufacturing every
+        robot part and leverage a wide array of machines in the team shop.
+        Fabrication team members use CNC routers, a high pressure abrasive
+        waterjet, a CNC plasma cutter, multiple 3D printers, and a variety of
+        manual machines including lathes, mills, and bandsaws to quickly and
+        precisely prepare parts for each robot.
       </>
     ),
   },
@@ -48,10 +50,12 @@ export const involvedSections: involvedEntry[] = [
     para: (
       <>
         Our design subteam uses Onshape, an online CAD (Computer Aided Design)
-        software, to design parts for our robots. We 3D model every element of
-        our robot, which can be over 100 pieces, to develop the mechanisms. The
-        design team also prototypes our robots mechanisms, an essential part of
-        the engineering process.
+        system, to design every part that goes into our robots. Every year we
+        design, review, and revise hundreds of custom parts for every subsystem
+        on our robots. We use Fusion 360 to generate CAM (Computer Aided
+        Manufacturing) files that are used on our CNC machines. The design team
+        also works closely with the fabrication team on prototyping robot
+        mechanisms as we move through the engineering design process.
       </>
     ),
   },
@@ -60,10 +64,17 @@ export const involvedSections: involvedEntry[] = [
     heading: "Controls",
     para: (
       <>
-        The controls subteam handles programming and wiring the robot. We use
-        Java with WPIlib to program our robot. Students solder, daisy-chain, and
-        diagnose problems to make sure the robot is functional on the field. In
-        2023, this included path planning, vision systems, and pose estimation.
+        The controls subteam handles programming and wiring all of our robots.
+        We program in Java and make extensive use of the FRC{" "}
+        <Link href="https://docs.wpilib.org/" target="_blank">
+          WPIlib{" "}
+        </Link>
+        library. We try to emphasize advanced controls topics and work to
+        advance our capabiliites, in 2023 we focused on path planning, AprilTag
+        vision systems, and pose estimation. Aside from programming, controls
+        team members are responsible for a variety of electrical tasks including
+        soldering, updating firmwares, and diagnosing problems to make sure the
+        robot is functional on the field.
       </>
     ),
   },

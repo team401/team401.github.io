@@ -14,7 +14,7 @@ export default function About() {
       <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Box textAlign="center">
           <Grid xs={12}>
-            <Card sx={{ mb: 0, p: 2, mx: 0 }}>
+            <Card sx={{ mb: 3, p: 2, mx: 0 }}>
               <Typography
                 variant="h3"
                 align="left"
@@ -44,16 +44,21 @@ export default function About() {
           </Grid>
           <Grid
             container
-            rowSpacing={5}
-            columnSpacing={2}
+            rowSpacing={{ xs: 0, md: 5 }}
+            columnSpacing={{ xs: 0, md: 2 }}
             sx={{ pt: 0, mt: 0 }}
           >
             {involvedSections.map((section) => (
               <Grid container key={section.heading}>
-                <Grid xs={12} md={6} maxWidth="100%">
+                <Grid
+                  xs={12}
+                  md={6}
+                  maxWidth="100%"
+                  marginBottom={{ xs: 1, md: 0 }}
+                >
                   <img src={section.img} width="100%"></img>
                 </Grid>
-                <Grid xs={12} md={6}>
+                <Grid xs={12} md={6} marginBottom={{ xs: 6, md: 0 }}>
                   <Paper sx={{ p: 3, minHeight: "100%" }}>
                     <Typography
                       variant="h4"
