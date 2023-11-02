@@ -105,7 +105,7 @@ export const robots: RobotInfo[] = [
         "2023gal"
       ),
       new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2023vabrb"),
-      new EventInfo("Rumble in the Roads", [], "2023varr"),
+      new EventInfo("Rumble in the Roads", ["Ironclad Award"], "2023varr"),
     ],
   }),
   new RobotInfo(2022, "Jörmungandr ", {
@@ -268,7 +268,7 @@ export const robots: RobotInfo[] = [
       ),
       new EventInfo(
         "Rumble in the Roads",
-        ["Event Finalist", "Captain's Award"],
+        ["Event Finalist", "Ironclad Award"],
         "2017varr"
       ),
     ],
