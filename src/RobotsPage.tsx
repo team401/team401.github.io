@@ -21,8 +21,38 @@ import { robots } from "./RobotsData";
 export default function Robots() {
   return (
     <>
-      <Container maxWidth="lg" sx={{ pt: 2 }}>
+      <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Box textAlign="center">
+          <Grid xs={12}>
+            <Card sx={{ mb: 0, p: 2, mx: 0 }}>
+              <Typography
+                variant="h3"
+                align="left"
+                color="text.secondary"
+                component="h1"
+                textAlign="center"
+                paddingBottom={1}
+              >
+                Robots
+              </Typography>
+              <Typography
+                variant="h6"
+                align="left"
+                color="text.secondary"
+                component="h1"
+                paddingBottom={2}
+              >
+                We're proud to publish accomplishments, CAD models, technical
+                documentation, and robot code for all of our robots from the
+                past nine years. If you have any questions about any of our
+                robots please{" "}
+                <Link href="mailto:401frc@gmail.com" target="_blank">
+                  contact us
+                </Link>
+                .
+              </Typography>
+            </Card>
+          </Grid>
           <Grid
             container
             rowSpacing={{ xs: 7 }}

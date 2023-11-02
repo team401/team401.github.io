@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Outreach from "./OutreachPage";
 import Resources from "./ResourcesPage";
 import Sponsors from "./SponsorsPage";
-import Involved from "./Involved";
+import Involved from "./InvolvedPage";
 import Robots from "./RobotsPage";
 import Coalition from "./CoalitionPage";
 import AboutFirst from "./FirstPage";
