@@ -92,13 +92,13 @@ export default function Sponsors() {
           </Card>
         </Grid>
         {SponsorList.map((tier) => (
-          <Box key={tier.name}>
+          <Box key={tier.name} width="100%">
             <Grid
               container
               item
               lg={12}
               sx={{ pt: 6, pb: 1 }}
-              maxWidth="100%"
+              width="100%"
               justifyContent="center"
             >
               <Typography
@@ -135,7 +135,7 @@ export default function Sponsors() {
                   justifyContent="center"
                   alignItems="center"
                   md={12 / tier.size}
-                  maxWidth="100%"
+                  width="100%"
                   key={sponsor.name}
                   sx={{ pb: 4 }}
                 >

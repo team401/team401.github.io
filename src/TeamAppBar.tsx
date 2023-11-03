@@ -48,7 +48,7 @@ function TeamAppBar(props: { pages: PageType[] }) {
     <AppBar position="fixed" style={{ background: "secondary" }}>
       <Container disableGutters maxWidth={false}>
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: "none", md: "flex" }, paddingLeft: 2 }}>
+          <Box sx={{ display: { xs: "none", lg: "flex" }, paddingLeft: 2 }}>
             {logoImage}
           </Box>
           <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
@@ -76,7 +76,7 @@ function TeamAppBar(props: { pages: PageType[] }) {
               ))}
             </List>
           </Drawer>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
             <IconButton
               size="large"
               aria-label="open menu"
@@ -88,14 +88,14 @@ function TeamAppBar(props: { pages: PageType[] }) {
               <MenuIcon />
             </IconButton>
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>{logoImage}</Box>
+          <Box sx={{ display: { xs: "flex", lg: "none" } }}>{logoImage}</Box>
           <Typography
             variant="h5"
             noWrap
             component="a"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", lg: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
@@ -104,7 +104,7 @@ function TeamAppBar(props: { pages: PageType[] }) {
               textDecoration: "none",
             }}
           ></Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
             {props.pages.map((page) => (
               <Button
                 component={Link}
