@@ -14,7 +14,7 @@ export default function About() {
       <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Box textAlign="center">
           <Grid xs={12}>
-            <Card sx={{ mb: 3, p: 2, mx: 0 }}>
+            <Card sx={{ mb: 4, p: 2, mx: 0 }}>
               <Typography
                 variant="h3"
                 align="left"

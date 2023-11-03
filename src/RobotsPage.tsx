@@ -24,7 +24,7 @@ export default function Robots() {
       <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Box textAlign="center">
           <Grid xs={12}>
-            <Card sx={{ mb: 0, p: 2, mx: 0 }}>
+            <Card sx={{ mb: 4, p: 2, mx: 0 }}>
               <Typography
                 variant="h3"
                 align="left"
@@ -55,9 +55,9 @@ export default function Robots() {
           </Grid>
           <Grid
             container
-            rowSpacing={{ xs: 7 }}
-            columnSpacing={{ xs: 0, md: 1 }}
-            sx={{ pt: 5 }}
+            rowSpacing={{ xs: 0, md: 5 }}
+            columnSpacing={{ xs: 0, md: 2 }}
+            sx={{ pt: 0, mt: 0 }}
           >
             {robots.map((robot) => (
               <Grid
