@@ -98,6 +98,25 @@ export const ResourcesList: ResourceSection[] = [
   new ResourceSection(
     "Community Resources",
     "These resources are developed and maintained by the FRC community and recommended by Team 401.",
-    []
+    [
+      new Resource(
+        "https://onshape4frc.com/",
+        "Onshape 4 FRC",
+        "A collection of resources to help teach CAD and design concepts"
+      ),
+      new Resource(
+        "https://www.reca.lc/",
+        "ReCalc",
+        "A collaboration focused mechanical design calculator."
+      ),
+      new Resource(
+        "https://appstore.onshape.com/apps/Manufacturers%20Models/2ZT7X5D646R3LM3ZND7LGBTYRVM4SVH6CDDGM6I=/description",
+        "MKCAD",
+        "A library of COTS and configurable parts for FRC teams to use in Onshape"
+      ),
+      new Resource("", "", ""),
+      new Resource("", "", ""),
+      new Resource("", "", ""),
+    ]
   ),
 ];
