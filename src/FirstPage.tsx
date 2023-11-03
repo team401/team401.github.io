@@ -23,8 +23,12 @@ export default function AboutFirst() {
     <>
       <Container maxWidth="lg" sx={{ pt: 5 }}>
         <Box textAlign="center">
-          <Grid container rowSpacing={5} columnSpacing={2}>
-            <Grid xs={12} md={12}>
+          <Grid
+            container
+            rowSpacing={{ xs: 0, md: 5 }}
+            columnSpacing={{ xs: 0, md: 2 }}
+          >
+            <Grid xs={12}>
               <Paper sx={{ p: 3, minHeight: "100%" }}>
                 <Typography
                   variant="h4"
@@ -110,19 +114,23 @@ export default function AboutFirst() {
 
             {firstSections.map((section) => (
               <Grid container key={section.img}>
-                <Grid xs={12} md={6} maxWidth="100%">
+                <Grid
+                  xs={12}
+                  md={6}
+                  maxWidth="100%"
+                  marginBottom={{ xs: 1, md: 0 }}
+                >
                   <img src={section.img} width="100%"></img>
                 </Grid>
-                <Grid xs={12} md={6}>
+                <Grid xs={12} md={6} marginBottom={{ xs: 6, md: 0 }}>
                   <Card
                     sx={{
                       minHeight: "100%",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      mx: 1,
-                      px: 1,
-                      pb: 1,
+                      mx: 0,
+                      p: 1,
                     }}
                   >
                     <CardContent sx={{ minHeight: "100%" }}>
