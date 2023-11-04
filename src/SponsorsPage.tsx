@@ -2,95 +2,40 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import { Button, Card, Grid, Link, Stack, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import { Divider } from "@mui/material";
 
+import Page from "./Page";
+import HeaderCard from "./HeaderCard";
+import { HeaderButton } from "./HeaderCard";
 import { SponsorList } from "./SponsorData";
 
 export default function Sponsors() {
-  const theme = useTheme();
-
+  const headerButtons: HeaderButton[] = [
+    {
+      link: "https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing",
+      title: "Sponsor Flyer",
+    },
+    { link: "mailto:401frc@gmail.com", title: "Email Us" },
+  ];
   return (
-    <Container maxWidth="lg" sx={{ pt: 4 }}>
+    <Page>
+      <HeaderCard title="Sponsors" buttons={headerButtons}>
+        <>
+          Team 401 couldn't exist without the generous monetary, material, and
+          mentorship support from all of our sponsors. We're thankful for the
+          extensive support that we receive from our community.
+          <br></br>
+          <br></br>
+          We're always excited to gain new sponsors, please reach out if you are
+          interested in supporting the team!
+        </>
+      </HeaderCard>
       <Grid
         container
         rowSpacing={5}
         columnSpacing={{ xs: 0, sm: 0, md: 1 }}
         justifyContent="center"
       >
-        <Grid item xs={12}>
-          <Card sx={{ p: 2 }}>
-            <Typography
-              variant="h3"
-              align="left"
-              color="text.secondary"
-              component="h1"
-              textAlign="center"
-              paddingBottom={1}
-              paddingTop={2}
-            >
-              Sponsors
-            </Typography>
-            <Typography
-              variant="h6"
-              align="left"
-              color="text.secondary"
-              component="h1"
-              paddingBottom={2}
-              paddingTop={2}
-            >
-              Team 401 couldn't exist without the generous monetary, material,
-              and mentorship support from all of our sponsors. We're thankful
-              for the extensive support that we receive from our community.
-            </Typography>
-            <Typography
-              variant="h6"
-              align="left"
-              color="text.secondary"
-              component="h1"
-              paddingBottom={3}
-            >
-              We're always excited to gain new sponsors, please reach out if you
-              are interested in supporting the team!
-            </Typography>
-            <Stack direction="row" justifyContent="center">
-              <Button
-                component={Link}
-                href="https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing"
-                target="_blank"
-                size="large"
-                variant="contained"
-                sx={{ mt: 2 }}
-              >
-                <Typography
-                  variant="h5"
-                  align="left"
-                  color="white"
-                  component="h1"
-                >
-                  Sponsor Flyer
-                </Typography>
-              </Button>
-              <Button
-                component={Link}
-                href="mailto:401frc@gmail.com"
-                target="_blank"
-                size="large"
-                variant="contained"
-                sx={{ mt: 2, ml: 2 }}
-              >
-                <Typography
-                  variant="h5"
-                  align="left"
-                  color="white"
-                  component="h1"
-                >
-                  Email Us
-                </Typography>
-              </Button>
-            </Stack>
-          </Card>
-        </Grid>
         {SponsorList.map((tier) => (
           <Box key={tier.name} width="100%">
             <Grid
@@ -152,7 +97,7 @@ export default function Sponsors() {
           </Box>
         ))}
       </Grid>
-    </Container>
+    </Page>
   );
 }
 

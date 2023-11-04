@@ -1,15 +1,13 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
+import Page from "./Page";
+import HeaderCard from "./HeaderCard";
 
 export default function Outreach() {
   return (
     <>
-      <Container disableGutters maxWidth={false} sx={{ paddingTop: 3 }}>
-        <Box sx={{ bgcolor: "background.paper", p: 1 }} component="footer">
-          Outreach
-        </Box>
-      </Container>
+      <Page>
+        <HeaderCard title="Outreach"></HeaderCard>
+      </Page>
     </>
   );
 }

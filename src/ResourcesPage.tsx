@@ -2,37 +2,21 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import { Card, Grid, Link, Typography } from "@mui/material";
 
+import Page from "./Page";
+import HeaderCard from "./HeaderCard";
 import { ResourcesList } from "./ResourcesData";
 
 export default function Resources() {
   return (
-    <Container disableGutters maxWidth="lg" sx={{ pt: 5 }}>
-      <Card sx={{ mb: 4, p: 2, mx: 2 }}>
-        <Typography
-          variant="h3"
-          align="left"
-          color="text.secondary"
-          component="h1"
-          textAlign="center"
-          paddingBottom={1}
-        >
-          Resources
-        </Typography>
-        <Typography
-          variant="h6"
-          align="left"
-          color="text.secondary"
-          component="h1"
-          paddingBottom={2}
-        >
-          Sharing resources helps FRC teams be more organized and efficient in
-          planning, design, manufacturing, and outreach. We're happy to share
-          some of our favorite resources that we use to stay informed and stay
-          on track.
-        </Typography>
-      </Card>
+    <Page>
+      <HeaderCard title="Resources">
+        Sharing resources helps FRC teams be more organized and efficient in
+        planning, design, manufacturing, and outreach. We're happy to share some
+        of our favorite resources that we use to stay informed and stay on
+        track.
+      </HeaderCard>
       {ResourcesList.map((section) => (
-        <Card sx={{ mb: 3, p: 2, mx: 2 }} key={section.title}>
+        <Card sx={{ mb: 3, p: 2, mx: 0 }} key={section.title}>
           <Typography
             variant="h4"
             align="left"
@@ -92,7 +76,7 @@ export default function Resources() {
           </Grid>
         </Card>
       ))}
-    </Container>
+    </Page>
   );
 }
 
