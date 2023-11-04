@@ -41,6 +41,7 @@ class RobotInfo {
   record?: string;
   notes?: string;
   events?: EventInfo[];
+  loading?: "eager" | "lazy" | undefined;
 
   constructor(
     year: number,
@@ -55,6 +56,7 @@ class RobotInfo {
       record?: string;
       notes?: string;
       events?: EventInfo[];
+      loading?: "eager" | "lazy" | undefined;
     }
   ) {
     this.year = year;
@@ -69,6 +71,7 @@ class RobotInfo {
     this.record = options?.record;
     this.notes = options?.notes;
     this.events = options?.events;
+    this.loading = options?.loading;
   }
 }
 
@@ -76,6 +79,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2023, "Mušḫuššu", {
     record: "58-28-2",
     img: robot2023,
+    loading: "eager",
     full: robot2023full,
     weight: "112.5 lb",
     cadLink:
@@ -111,6 +115,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2022, "Jörmungandr ", {
     record: "59-21-1",
     img: robot2022,
+    loading: "eager",
     full: robot2022full,
     weight: "105.8 lb",
     codeLink: "https://github.com/team401/2022-Robot-Code",
@@ -146,6 +151,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2021, "Glycon", {
     record: "6-5-0",
     img: robot2021,
+    loading: "lazy",
     full: robot2021full,
     cadLink:
       "https://cad.onshape.com/documents/84707311327861b9fdce8a73/w/652c81d4db21c84dc91a591d",
@@ -166,6 +172,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2020, "Mamba", {
     record: "7-8-0",
     img: robot2020,
+    loading: "lazy",
     full: robot2020full,
     codeLink: "https://github.com/team401/2020-Robot-Code",
     cadLink:
@@ -185,6 +192,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2019, "Ouroboros", {
     record: "55-34-3",
     img: robot2019,
+    loading: "lazy",
     full: robot2019full,
     codeLink: "https://github.com/team401/2019-Robot-Code",
     cadLink:
@@ -211,6 +219,7 @@ export const robots: RobotInfo[] = [
   new RobotInfo(2018, "Apophis", {
     record: "36-27-0",
     img: robot2018,
+    loading: "lazy",
     full: robot2018full,
     codeLink: "https://github.com/team401/2018-Robot-Code",
     cadLink:
@@ -238,6 +247,7 @@ export const robots: RobotInfo[] = [
   }),
   new RobotInfo(2017, "Phil", {
     img: robot2017,
+    loading: "lazy",
     full: robot2017full,
     record: "35-29-1",
     cadLink:
@@ -275,6 +285,7 @@ export const robots: RobotInfo[] = [
   }),
   new RobotInfo(2016, "Quetzalcoatl", {
     img: robot2016,
+    loading: "lazy",
     full: robot2016full,
     record: "38-22-0",
     cadLink:
@@ -297,6 +308,7 @@ export const robots: RobotInfo[] = [
   }),
   new RobotInfo(2015, "Power Surge", {
     img: robot2015,
+    loading: "lazy",
     full: robot2015full,
     record: "0-0 (18 matches played)",
     cadLink:

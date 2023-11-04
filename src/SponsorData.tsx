@@ -21,11 +21,18 @@ class Sponsor {
   img: string;
   name: string;
   link: string;
+  loading?: "eager" | "lazy" | undefined;
 
-  constructor(img: string, name: string, link: string) {
+  constructor(
+    img: string,
+    name: string,
+    link: string,
+    loading?: "eager" | "lazy" | undefined
+  ) {
     this.img = img;
     this.name = name;
     this.link = link;
+    this.loading = loading;
   }
 }
 
@@ -43,51 +50,67 @@ class SponsorTier {
 
 export const SponsorList: SponsorTier[] = [
   new SponsorTier("Gold Sponsors", 1, [
-    new Sponsor(mcps, "Montgomery County Public Schools", "https://mcps.org"),
+    new Sponsor(
+      mcps,
+      "Montgomery County Public Schools",
+      "https://mcps.org",
+      "eager"
+    ),
   ]),
   new SponsorTier("Silver Sponsors", 3, [
-    new Sponsor(rev, "REV Robotics", "https://www.revrobotics.com/"),
+    new Sponsor(rev, "REV Robotics", "https://www.revrobotics.com/", "eager"),
     new Sponsor(
       haas,
       "Gene Haas Foundation",
-      "https://ghaasfoundation.org/content/ghf/en/home.html"
+      "https://ghaasfoundation.org/content/ghf/en/home.html",
+      "eager"
     ),
-    new Sponsor(rtx, "RTX", "https://www.rtx.com/"),
-    new Sponsor(corning, "Corning", "https://www.corning.com"),
-    new Sponsor(torc, "TORC Robotics", "https://torc.ai/"),
+    new Sponsor(rtx, "RTX", "https://www.rtx.com/", "eager"),
+    new Sponsor(corning, "Corning", "https://www.corning.com", "lazy"),
+    new Sponsor(torc, "TORC Robotics", "https://torc.ai/", "lazy"),
     new Sponsor(
       blacksburgEye,
       "Blacksburg Eye Associates",
-      "https://www.blacksburgeye.com/"
+      "https://www.blacksburgeye.com/",
+      "lazy"
     ),
-    new Sponsor(aep, "American Electric Power", "https://aep.com"),
-    new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/"),
-    new Sponsor(auvsi, "AUVSI", "https://www.auvsiridgeandvalley.org/"),
+    new Sponsor(aep, "American Electric Power", "https://aep.com", "lazy"),
+    new Sponsor(bae, "BAE Systems", "https://www.baesystems.com/", "lazy"),
+    new Sponsor(auvsi, "AUVSI", "https://www.auvsiridgeandvalley.org/", "lazy"),
     new Sponsor(
       intuitive,
       "Intuitive Foundation",
-      "https://www.intuitive-foundation.org/first-robotics/"
+      "https://www.intuitive-foundation.org/first-robotics/",
+      "lazy"
     ),
-    new Sponsor(kroger, "Kroger", "https://kroger.com/"),
+    new Sponsor(kroger, "Kroger", "https://kroger.com/", "lazy"),
     new Sponsor(
       goodShepherd,
       "Good Shepherd Chuch of the Brethren",
-      "https://www.goodshepherdblacksburg.org/"
+      "https://www.goodshepherdblacksburg.org/",
+      "lazy"
     ),
   ]),
   new SponsorTier("Copperhead Sponsors", 4, [
     new Sponsor(
       schoolOfEd,
       "Virginia Tech School of Education",
-      "https://liberalarts.vt.edu/departments-and-schools/school-of-education.html"
+      "https://liberalarts.vt.edu/departments-and-schools/school-of-education.html",
+      "lazy"
     ),
     new Sponsor(
       nichols,
       "Tammy Nichols, REALTOR",
-      "http://tammynicholsrealestate.com/"
+      "http://tammynicholsrealestate.com/",
+      "lazy"
     ),
-    new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/"),
-    new Sponsor(gentoo, "Gentoo Technologies", "http://gentootech.com/"),
-    new Sponsor(aci, "ACI", "https://aciwebs.com/"),
+    new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/", "lazy"),
+    new Sponsor(
+      gentoo,
+      "Gentoo Technologies",
+      "http://gentootech.com/",
+      "lazy"
+    ),
+    new Sponsor(aci, "ACI", "https://aciwebs.com/", "lazy"),
   ]),
 ];

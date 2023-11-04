@@ -79,7 +79,11 @@ export default function Resources() {
                   </>
                   <Link href={resource.link} target="_blank">
                     {resource.img && (
-                      <img src={resource.img} width="100%"></img>
+                      <img
+                        src={resource.img}
+                        width="100%"
+                        loading={resource.loading}
+                      ></img>
                     )}
                   </Link>
                 </Grid>

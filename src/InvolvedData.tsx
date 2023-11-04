@@ -11,6 +11,7 @@ type involvedEntry = {
   img: string;
   heading: string;
   para: JSX.Element;
+  loading?: "eager" | "lazy" | undefined;
 };
 
 export const involvedSections: involvedEntry[] = [
@@ -29,6 +30,7 @@ export const involvedSections: involvedEntry[] = [
         Our team consists of four subteams, each with a different purpose.
       </>
     ),
+    loading: "eager",
   },
   {
     img: fabrication,
@@ -43,6 +45,7 @@ export const involvedSections: involvedEntry[] = [
         precisely prepare parts for each robot.
       </>
     ),
+    loading: "eager",
   },
   {
     img: design,
@@ -58,6 +61,7 @@ export const involvedSections: involvedEntry[] = [
         mechanisms as we move through the engineering design process.
       </>
     ),
+    loading: "lazy",
   },
   {
     img: controls,
@@ -77,6 +81,7 @@ export const involvedSections: involvedEntry[] = [
         robot is functional on the field.
       </>
     ),
+    loading: "lazy",
   },
   {
     img: outreach,
@@ -92,5 +97,6 @@ export const involvedSections: involvedEntry[] = [
         to carry our team's legacy into the future.
       </>
     ),
+    loading: "lazy",
   },
 ];

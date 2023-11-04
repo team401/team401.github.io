@@ -52,7 +52,11 @@ export default function Involved() {
                 maxWidth="100%"
                 marginBottom={{ xs: 1, md: 0 }}
               >
-                <img src={section.img} width="100%"></img>
+                <img
+                  src={section.img}
+                  width="100%"
+                  loading={section.loading}
+                ></img>
               </Grid>
               <Grid xs={12} md={6} marginBottom={{ xs: 6, md: 0 }}>
                 <Paper sx={{ p: 3, minHeight: "100%" }}>

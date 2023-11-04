@@ -11,11 +11,13 @@ type firstEntry = {
   img: string;
   heading: JSX.Element;
   para: JSX.Element;
+  loading?: "eager" | "lazy" | undefined;
 };
 
 export const firstSections: firstEntry[] = [
   {
     img: frc,
+    loading: "eager",
     ages: "14-18",
     grades: "9-12",
     link: "https://www.firstinspires.org/robotics/frc",
@@ -36,6 +38,7 @@ export const firstSections: firstEntry[] = [
   },
   {
     img: ftc,
+    loading: "eager",
     ages: "12-18",
     grades: "7-12",
     link: "https://www.firstinspires.org/robotics/ftc",
@@ -56,6 +59,7 @@ export const firstSections: firstEntry[] = [
   },
   {
     img: fll,
+    loading: "lazy",
     ages: "4-16",
     grades: "PreK-8",
     link: "https://www.firstinspires.org/robotics/fll",

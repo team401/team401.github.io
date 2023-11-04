@@ -78,6 +78,7 @@ export default function Robots() {
                 >
                   <img
                     src={robot.img}
+                    loading={robot.loading}
                     style={{ maxHeight: 500, maxWidth: "100%" }}
                   />
                 </Zoom>
