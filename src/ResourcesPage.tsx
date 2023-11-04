@@ -32,7 +32,7 @@ export default function Resources() {
         </Typography>
       </Card>
       {ResourcesList.map((section) => (
-        <Card sx={{ mb: 3, p: 2, mx: 2 }}>
+        <Card sx={{ mb: 3, p: 2, mx: 2 }} key={section.title}>
           <Typography
             variant="h4"
             align="left"
@@ -51,9 +51,9 @@ export default function Resources() {
           >
             {section.description}
           </Typography>
-          <Grid container xs={12}>
+          <Grid item container xs={12}>
             {section.resources.map((resource) => (
-              <Grid item container md={6} sm={12}>
+              <Grid item container md={6} sm={12} key={resource.title}>
                 <Grid
                   container
                   item
@@ -91,3 +91,5 @@ export default function Resources() {
     </Container>
   );
 }
+
+export const ResourcesMemo = React.memo(Resources);

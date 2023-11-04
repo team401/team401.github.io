@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import logo from "./img/logo_white.png";
 import { PageType } from "./App";
 
-function TeamAppBar(props: { pages: PageType[] }) {
+export default function TeamAppBar(props: { pages: PageType[] }) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer =
@@ -60,12 +60,8 @@ function TeamAppBar(props: { pages: PageType[] }) {
               sx={{ minWidth: 200 }}
             >
               {props.pages.map((page) => (
-                <>
-                  <ListItemButton
-                    component={Link}
-                    to={page.path}
-                    key={page.title}
-                  >
+                <Box key={page.title}>
+                  <ListItemButton component={Link} to={page.path}>
                     <ListItemText
                       primary={page.title}
                       primaryTypographyProps={{
@@ -74,7 +70,7 @@ function TeamAppBar(props: { pages: PageType[] }) {
                     />
                   </ListItemButton>
                   <Divider />
-                </>
+                </Box>
               ))}
             </List>
           </Drawer>
@@ -109,30 +105,32 @@ function TeamAppBar(props: { pages: PageType[] }) {
             }}
           ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
-            {props.pages.map((page) =>
-              page.path === "/" ? null : (
-                <Button
-                  component={Link}
-                  to={page.path}
-                  key={page.title}
-                  onClick={toggleDrawer(false)}
-                  size="large"
-                  sx={{
-                    my: 0,
-                    py: 0,
-                    color: "white",
-                    display: "block",
-                    textAlign: "center",
-                  }}
-                >
-                  {page.title}
-                </Button>
-              )
-            )}
+            {props.pages.map((page) => (
+              <Box key={page.path}>
+                {page.path === "/" ? null : (
+                  <Button
+                    component={Link}
+                    to={page.path}
+                    onClick={toggleDrawer(false)}
+                    size="large"
+                    sx={{
+                      my: 0,
+                      py: 0,
+                      color: "white",
+                      display: "block",
+                      textAlign: "center",
+                    }}
+                  >
+                    {page.title}
+                  </Button>
+                )}
+              </Box>
+            ))}
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
-export default TeamAppBar;
+
+export const AppBarMemo = React.memo(TeamAppBar);

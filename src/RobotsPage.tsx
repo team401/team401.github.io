@@ -22,7 +22,7 @@ export default function Robots() {
   return (
     <Container maxWidth="lg" sx={{ pt: 5 }}>
       <Box textAlign="center">
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Card sx={{ mb: 4, p: 2, mx: 0 }}>
             <Typography
               variant="h3"
@@ -211,3 +211,5 @@ export default function Robots() {
     </Container>
   );
 }
+
+export const RobotsMemo = React.memo(Robots);

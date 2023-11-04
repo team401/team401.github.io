@@ -13,3 +13,5 @@ export default function Outreach() {
     </>
   );
 }
+
+export const OutreachMemo = React.memo(Outreach);

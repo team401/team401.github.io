@@ -2,13 +2,10 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Paper, Box, Typography, Card, Link } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 import { involvedSections } from "./InvolvedData";
 
-export default function About() {
-  const theme = useTheme();
-
+export default function Involved() {
   return (
     <Container maxWidth="lg" sx={{ pt: 5 }}>
       <Box textAlign="center">
@@ -86,3 +83,5 @@ export default function About() {
     </Container>
   );
 }
+
+export const InvolvedMemo = React.memo(Involved);

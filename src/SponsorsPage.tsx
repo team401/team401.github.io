@@ -151,3 +151,5 @@ export default function Sponsors() {
     </Container>
   );
 }
+
+export const SponosorsMemo = React.memo(Sponsors);

@@ -119,3 +119,5 @@ export default function About() {
     </>
   );
 }
+
+export const AboutMemo = React.memo(About);
