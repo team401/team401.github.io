@@ -114,7 +114,7 @@ export default function Sponsors() {
               sx={{
                 mb: 6,
                 borderBottomWidth: 2,
-                background: "#333",
+                background: "text.secondary",
               }}
             />
             <Grid

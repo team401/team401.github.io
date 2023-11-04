@@ -8,6 +8,11 @@ import grantTracking from "./img/resources/grantTracking.png";
 import batteryBOM from "./img/resources/batteryBOM.png";
 import calendar from "./img/resources/calendar.png";
 
+import cd from "./img/resources/cd.png";
+import mkcad from "./img/resources/mkcad.png";
+import recalc from "./img/resources/recalc.png";
+import onshape4frc from "./img/resources/onshape4frc.png";
+
 class Resource {
   link: string;
   title: string;
@@ -100,23 +105,29 @@ export const ResourcesList: ResourceSection[] = [
     "These resources are developed and maintained by the FRC community and recommended by Team 401.",
     [
       new Resource(
-        "https://onshape4frc.com/",
-        "Onshape 4 FRC",
-        "A collection of resources to help teach CAD and design concepts"
-      ),
-      new Resource(
         "https://www.reca.lc/",
         "ReCalc",
-        "A collaboration focused mechanical design calculator."
+        "A collaboration focused mechanical design calculator.",
+        recalc
       ),
       new Resource(
         "https://appstore.onshape.com/apps/Manufacturers%20Models/2ZT7X5D646R3LM3ZND7LGBTYRVM4SVH6CDDGM6I=/description",
         "MKCAD",
-        "A library of COTS and configurable parts for FRC teams to use in Onshape"
+        "A library of COTS and configurable parts for FRC teams to use in Onshape",
+        mkcad
       ),
-      new Resource("", "", ""),
-      new Resource("", "", ""),
-      new Resource("", "", ""),
+      new Resource(
+        "https://www.chiefdelphi.com/",
+        "ChiefDelphi",
+        "The largest online forum for FRC discussion",
+        cd
+      ),
+      new Resource(
+        "https://onshape4frc.com/",
+        "Onshape 4 FRC",
+        "A collection of resources to help teach CAD and design concepts",
+        onshape4frc
+      ),
     ]
   ),
 ];
