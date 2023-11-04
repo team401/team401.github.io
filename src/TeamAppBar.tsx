@@ -48,9 +48,11 @@ function TeamAppBar(props: { pages: PageType[] }) {
     <AppBar position="fixed" style={{ background: "secondary" }}>
       <Container disableGutters maxWidth={false}>
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: "none", lg: "flex" }, paddingLeft: 2 }}>
-            {logoImage}
-          </Box>
+          <Link to={"/"}>
+            <Box sx={{ display: { xs: "none", lg: "flex" }, paddingLeft: 2 }}>
+              {logoImage}
+            </Box>
+          </Link>
           <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
             <List
               component="nav"
@@ -88,7 +90,9 @@ function TeamAppBar(props: { pages: PageType[] }) {
               <MenuIcon />
             </IconButton>
           </Box>
-          <Box sx={{ display: { xs: "flex", lg: "none" } }}>{logoImage}</Box>
+          <Link to="/">
+            <Box sx={{ display: { xs: "flex", lg: "none" } }}>{logoImage}</Box>
+          </Link>
           <Typography
             variant="h5"
             noWrap
@@ -105,18 +109,26 @@ function TeamAppBar(props: { pages: PageType[] }) {
             }}
           ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
-            {props.pages.map((page) => (
-              <Button
-                component={Link}
-                to={page.path}
-                key={page.title}
-                onClick={toggleDrawer(false)}
-                size="large"
-                sx={{ my: 0, py: 0, color: "white", display: "block", textAlign: "center" }}
-              >
-                {page.title}
-              </Button>
-            ))}
+            {props.pages.map((page) =>
+              page.path === "/" ? null : (
+                <Button
+                  component={Link}
+                  to={page.path}
+                  key={page.title}
+                  onClick={toggleDrawer(false)}
+                  size="large"
+                  sx={{
+                    my: 0,
+                    py: 0,
+                    color: "white",
+                    display: "block",
+                    textAlign: "center",
+                  }}
+                >
+                  {page.title}
+                </Button>
+              )
+            )}
           </Box>
         </Toolbar>
       </Container>

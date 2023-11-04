@@ -22,7 +22,7 @@ export type PageType = {
 const pages: PageType[] = [
   { path: "/", title: "About Us", elem: <About /> },
   { path: "/first", title: "About FIRST", elem: <AboutFirst /> },
-  { path: "/involved", title: "Get Involved", elem: <Involved /> },
+  { path: "/involved", title: "Join Us", elem: <Involved /> },
   { path: "/outreach", title: "Outreach", elem: <Outreach /> },
   { path: "/robots", title: "Robots", elem: <Robots /> },
   { path: "/resources", title: "Resources", elem: <Resources /> },
@@ -36,6 +36,7 @@ export default function App() {
       <TeamAppBar pages={pages} />
       <Box sx={{ height: "5vh" }}></Box>
       <Routes>
+        <Route path="/" element={<About />} />
         {pages.map((page) => (
           <Route path={page.path} element={page.elem} key={page.path} />
         ))}
