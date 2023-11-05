@@ -51,6 +51,7 @@ export default function Robots() {
               item
               md={robot.img ? 6 : 0}
               marginBottom={{ xs: 1, md: 0 }}
+              textAlign="center"
             >
               <Zoom
                 zoomImg={{
@@ -60,7 +61,7 @@ export default function Robots() {
                 <img
                   src={robot.img}
                   loading={robot.loading}
-                  style={{ maxHeight: 500, maxWidth: "100%" }}
+                  style={{ maxHeight: "50vh", maxWidth: "100%" }}
                 />
               </Zoom>
             </Grid>
