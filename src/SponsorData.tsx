@@ -16,6 +16,7 @@ import corning from "./img/sponsors/corning.png";
 import gentoo from "./img/sponsors/gentoo.png";
 import aci from "./img/sponsors/aci.png";
 import intuitive from "./img/sponsors/intuitive.png";
+import ptc from "./img/sponsors/ptc.png";
 
 class Sponsor {
   img: string;
@@ -83,6 +84,7 @@ export const SponsorList: SponsorTier[] = [
       "https://www.intuitive-foundation.org/first-robotics/",
       "lazy"
     ),
+    new Sponsor(ptc, "PTC", "https://www.ptc.com", "lazy"),
     new Sponsor(kroger, "Kroger", "https://kroger.com/", "lazy"),
     new Sponsor(
       goodShepherd,
