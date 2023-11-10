@@ -1,7 +1,7 @@
 {
   "name": "team401",
   "version": "5.0.0",
-  "homepage": "team401.github.io",
+  "homepage": "http://team401.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
