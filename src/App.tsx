@@ -19,15 +19,18 @@ export type PageType = {
   elem: JSX.Element;
 };
 
+const unfinished: PageType[] = [
+  { path: "/outreach", title: "Outreach", elem: <OutreachMemo /> },
+  { path: "/coalition", title: "Coalition", elem: <CoalitionMemo /> },
+];
+
 const pages: PageType[] = [
   { path: "/", title: "About Us", elem: <AboutMemo /> },
   { path: "/first", title: "About FIRST", elem: <FirstMemo /> },
   { path: "/involved", title: "Join Us", elem: <InvolvedMemo /> },
-  { path: "/outreach", title: "Outreach", elem: <OutreachMemo /> },
   { path: "/robots", title: "Robots", elem: <RobotsMemo /> },
   { path: "/resources", title: "Resources", elem: <ResourcesMemo /> },
   { path: "/sponsors", title: "Sponsors", elem: <SponsorsMemo /> },
-  { path: "/coalition", title: "Coalition", elem: <CoalitionMemo /> },
 ];
 
 export default function App() {

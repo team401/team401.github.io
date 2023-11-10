@@ -22,15 +22,14 @@ const aboutSections: aboutEntry[] = [
       <>
         We are a <i>FIRST</i> Robotics Competition team dedicated spreading STEM
         (Science, Technology, Engineering, and Mathematics) and serving our
-        community. Team 401 was founded in 1999 by five Virginia Tech students
-        and known as PowerSurge until 2006. From 2007 to 2016 we held the name
-        HokieGUARD. Now, we are Copperhead Robotics. We have moved around to
-        different locations over the years, and have now had a stable shop space
-        in Christiansburg High School for a few years. We have built a strong
-        robotics program along with a constantly expanding outreach program.{" "}
+        community. We serve all four public high schools in Montgomery County,
+        Virginia and support local <i>FIRST</i> programs throughout the county.
         <br></br>
-        <br></br>Click here to learn about our competition history and here to
-        watch us live during competition.
+        <br></br>
+        Our team is made up of 35 high school students and 9 mentors. Team
+        members fill many different roles on our team, including leadership,
+        community relations, programming, mechanical design, CNC manufacturing,
+        sponsor development, and finance.
       </>
     ),
   },
@@ -39,12 +38,11 @@ const aboutSections: aboutEntry[] = [
     heading: "What do we do?",
     para: (
       <>
-        Currently, our team is made up of about 30 people from Blacksburg and
-        Christiansburg High Schools. We accept students from all four high
-        schools, but our membership usually stems mostly from these two schools.
-        Each of our students fulfill the many different roles required to run
-        our team, ranging from team leadership, outreach organization,
-        mechanical design, parts manufacturing, and finance organization.
+        Each year team members design and build a 125 pound robot from scratch
+        to compete with teams from around the state and around the world. Aside
+        from the robot build we spend most of the year building technical
+        skills, volunteering in our local community, and advocating for STEM
+        support in education and government.
       </>
     ),
   },
