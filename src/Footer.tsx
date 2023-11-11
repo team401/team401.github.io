@@ -43,7 +43,7 @@ function Copyright() {
       component="p"
     >
       {"Copyright © "}
-      <Link color="inherit" href="team401.github.io/">
+      <Link color="inherit" href="https://team401.github.io/">
         FRC Team 401
       </Link>{" "}
       {new Date().getFullYear()}
