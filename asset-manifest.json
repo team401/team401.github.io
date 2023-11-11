@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6a16415.css",
-    "main.js": "/static/js/main.418425bd.js",
+    "main.js": "/static/js/main.247138d4.js",
     "static/media/teamPhoto.jpg": "/static/media/teamPhoto.09136529b9549d3b548c.jpg",
     "static/media/big2022.png": "/static/media/big2022.440c1598f6a24b5b2dcf.png",
     "static/media/big2023.png": "/static/media/big2023.cd4c851e5340bafce107.png",
@@ -27,6 +27,8 @@
     "static/media/big2017.png": "/static/media/big2017.3577fdd53fe997cbaef9.png",
     "static/media/chsStats.png": "/static/media/chsStats.b1e5c42fb14ee1c4b88a.png",
     "static/media/design.jpg": "/static/media/design.1801b4d31a13a4518838.jpg",
+    "static/media/2023BBot.png": "/static/media/2023BBot.3b911ecabbb5f6bb9975.png",
+    "static/media/BatteryCart.png": "/static/media/BatteryCart.0c5ebf9bc36615490754.png",
     "static/media/small2023.png": "/static/media/small2023.68e8a52a86c80e916bf8.png",
     "static/media/small2019.png": "/static/media/small2019.f800720d70b5d8a58670.png",
     "static/media/fll.jpg": "/static/media/fll.4305f90e4180dd1cd0f1.jpg",
@@ -39,17 +41,20 @@
     "static/media/grantTracking.png": "/static/media/grantTracking.66d38d2f2284cafedbe3.png",
     "static/media/gantt.png": "/static/media/gantt.fa15cdf49762b72282fa.png",
     "static/media/controls.jpg": "/static/media/controls.98c3de63305b0dca3b58.jpg",
+    "static/media/DriverStation.png": "/static/media/DriverStation.4aa8857b1c02f1cdad14.png",
     "static/media/onshape4frc.png": "/static/media/onshape4frc.fda3c15696e211d65270.png",
     "static/media/wiring.png": "/static/media/wiring.8c95b22a7b9e0fa286d7.png",
     "static/media/recalc.png": "/static/media/recalc.b868da2fe5cd39e84ecd.png",
     "static/media/BlacksburgEye.png": "/static/media/BlacksburgEye.04dc75a19a7f711f1a6e.png",
     "static/media/haas.png": "/static/media/haas.e4e8d1ab945b97ea51d4.png",
     "static/media/mcps.png": "/static/media/mcps.ca6be28376f6cde9d49f.png",
+    "static/media/GrasshopperNuts.png": "/static/media/GrasshopperNuts.95a756803645d9a7f7ad.png",
     "static/media/TeamREV.png": "/static/media/TeamREV.35700b86aba6544cb4de.png",
     "static/media/aci.png": "/static/media/aci.06af6fe8456b10f2ee5b.png",
     "static/media/gentoo.png": "/static/media/gentoo.9552ac971274d202b0fc.png",
     "static/media/nichols.png": "/static/media/nichols.9787b7c1504836057763.png",
     "static/media/goodShepherd.png": "/static/media/goodShepherd.a10e9f997369850bfb7d.png",
+    "static/media/MK4iCover.png": "/static/media/MK4iCover.6d804ebead4b6962d6a4.png",
     "static/media/calendar.png": "/static/media/calendar.6aeb1d8248e3e4cc2943.png",
     "static/media/nest.png": "/static/media/nest.a483ef6a5393027136a5.png",
     "static/media/rtx.png": "/static/media/rtx.4a624db0afd8324cbd89.png",
@@ -58,10 +63,10 @@
     "static/media/schoolOfEd.png": "/static/media/schoolOfEd.7b0ea07eb42d2819c228.png",
     "index.html": "/index.html",
     "main.c6a16415.css.map": "/static/css/main.c6a16415.css.map",
-    "main.418425bd.js.map": "/static/js/main.418425bd.js.map"
+    "main.247138d4.js.map": "/static/js/main.247138d4.js.map"
   },
   "entrypoints": [
     "static/css/main.c6a16415.css",
-    "static/js/main.418425bd.js"
+    "static/js/main.247138d4.js"
   ]
 }
