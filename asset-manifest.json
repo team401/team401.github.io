@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6a16415.css",
-    "main.js": "/static/js/main.ceb76a52.js",
+    "main.js": "/static/js/main.418425bd.js",
     "static/media/teamPhoto.jpg": "/static/media/teamPhoto.09136529b9549d3b548c.jpg",
     "static/media/big2022.png": "/static/media/big2022.440c1598f6a24b5b2dcf.png",
     "static/media/big2023.png": "/static/media/big2023.cd4c851e5340bafce107.png",
@@ -58,10 +58,10 @@
     "static/media/schoolOfEd.png": "/static/media/schoolOfEd.7b0ea07eb42d2819c228.png",
     "index.html": "/index.html",
     "main.c6a16415.css.map": "/static/css/main.c6a16415.css.map",
-    "main.ceb76a52.js.map": "/static/js/main.ceb76a52.js.map"
+    "main.418425bd.js.map": "/static/js/main.418425bd.js.map"
   },
   "entrypoints": [
     "static/css/main.c6a16415.css",
-    "static/js/main.ceb76a52.js"
+    "static/js/main.418425bd.js"
   ]
 }
