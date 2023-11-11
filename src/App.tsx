@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import AppBarMemo from "./TeamAppBar";
@@ -35,7 +35,7 @@ const pages: PageType[] = [
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppBarMemo pages={pages} />
       <Box sx={{ height: "5vh" }}></Box>
       <Routes>
@@ -46,6 +46,6 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <FooterMemo />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
