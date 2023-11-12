@@ -27,9 +27,9 @@ const aboutSections: aboutEntry[] = [
         <br></br>
         <br></br>
         Our team is made up of 35 high school students and 9 mentors. Team
-        members fill many different roles on our team, including leadership,
-        community relations, programming, mechanical design, CNC manufacturing,
-        sponsor development, and finance.
+        members fill many different roles including leadership, community
+        relations, programming, mechanical design, CNC manufacturing, sponsor
+        development, and finance.
       </>
     ),
   },
