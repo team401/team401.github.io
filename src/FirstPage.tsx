@@ -3,10 +3,10 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { Box, Typography, Card, CardContent, CardActions } from "@mui/material";
 
 import { firstSections } from "./FirstData";
-import HeaderCard from "./HeaderCard";
-import { HeaderButton } from "./HeaderCard";
-import StyledButton from "./StyledButton";
-import Page from "./Page";
+import HeaderCard from "./components/HeaderCard";
+import { HeaderButton } from "./components/HeaderCard";
+import StyledButton from "./components/StyledButton";
+import Page from "./components/Page";
 
 export default function AboutFirst() {
   const headerTitle = (

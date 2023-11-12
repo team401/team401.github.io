@@ -3,9 +3,9 @@ import Box from "@mui/material/Box";
 import { Grid, Link, Typography } from "@mui/material";
 import { Divider } from "@mui/material";
 
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
-import { HeaderButton } from "./HeaderCard";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
+import { HeaderButton } from "./components/HeaderCard";
 import { SponsorList } from "./SponsorData";
 
 export default function Sponsors() {

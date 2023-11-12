@@ -2,8 +2,8 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import { Card, Grid, Link, Typography } from "@mui/material";
 
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
 import { ResourcesList } from "./ResourcesData";
 
 export default function Resources() {

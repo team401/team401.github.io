@@ -2,8 +2,8 @@ import * as React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Paper, Typography, Link } from "@mui/material";
 
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
 
 import { involvedSections } from "./InvolvedData";
 

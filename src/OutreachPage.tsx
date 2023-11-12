@@ -1,6 +1,6 @@
 import * as React from "react";
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
 
 export default function Outreach() {
   return (

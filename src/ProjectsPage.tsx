@@ -10,9 +10,9 @@ import {
   Typography,
 } from "@mui/material";
 
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
-import StyledButton from "./StyledButton";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
+import StyledButton from "./components/StyledButton";
 
 import { projects } from "./ProjectsData";
 

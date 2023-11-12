@@ -11,8 +11,8 @@ import Drawer from "@mui/material/Drawer";
 import { Divider, List, ListItemButton, ListItemText } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import logo from "./img/logo_white.png";
-import { PageType } from "./App";
+import logo from "../img/logo_white.png";
+import { PageType } from "../App";
 
 export default function TeamAppBar(props: { pages: PageType[] }) {
   const [open, setOpen] = React.useState(false);

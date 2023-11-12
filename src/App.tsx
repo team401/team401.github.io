@@ -1,20 +1,21 @@
 import * as React from "react";
+import { Suspense, lazy } from "react";
 import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
 
-import AppBarMemo from "./TeamAppBar";
-import ScrollToTop from "./ScrollToTop";
-import FooterMemo from "./Footer";
+import AppBarMemo from "./components/TeamAppBar";
+import ScrollToTop from "./components/ScrollToTop";
+import FooterMemo from "./components/Footer";
 
-import AboutMemo from "./AboutPage";
-import OutreachMemo from "./OutreachPage";
-import ResourcesMemo from "./ResourcesPage";
-import SponsorsMemo from "./SponsorsPage";
-import InvolvedMemo from "./InvolvedPage";
-import RobotsMemo from "./RobotsPage";
-import CoalitionMemo from "./CoalitionPage";
-import FirstMemo from "./FirstPage";
-import ProjectsMemo from "./Projects";
+const About = lazy(() => import("./AboutPage"));
+const Outreach = lazy(() => import("./OutreachPage"));
+const Resources = lazy(() => import("./ResourcesPage"));
+const Sponsors = lazy(() => import("./SponsorsPage"));
+const Involved = lazy(() => import("./InvolvedPage"));
+const Robots = lazy(() => import("./RobotsPage"));
+const FIRST = lazy(() => import("./FirstPage"));
+const Coalition = lazy(() => import("./CoalitionPage"));
+const Projects = lazy(() => import("./ProjectsPage"));
 
 export type PageType = {
   path: string;
@@ -23,18 +24,18 @@ export type PageType = {
 };
 
 const unfinished: PageType[] = [
-  { path: "/outreach", title: "Outreach", elem: <OutreachMemo /> },
-  { path: "/coalition", title: "Coalition", elem: <CoalitionMemo /> },
+  { path: "/outreach", title: "Outreach", elem: <Outreach /> },
+  { path: "/coalition", title: "Coalition", elem: <Coalition /> },
 ];
 
 const pages: PageType[] = [
-  { path: "/", title: "About Us", elem: <AboutMemo /> },
-  { path: "/first", title: "About FIRST", elem: <FirstMemo /> },
-  { path: "/involved", title: "Join Us", elem: <InvolvedMemo /> },
-  { path: "/robots", title: "Robots", elem: <RobotsMemo /> },
-  { path: "/projects", title: "Projects", elem: <ProjectsMemo /> },
-  { path: "/resources", title: "Resources", elem: <ResourcesMemo /> },
-  { path: "/sponsors", title: "Sponsors", elem: <SponsorsMemo /> },
+  { path: "/", title: "About Us", elem: <About /> },
+  { path: "/first", title: "About FIRST", elem: <FIRST /> },
+  { path: "/involved", title: "Join Us", elem: <Involved /> },
+  { path: "/robots", title: "Robots", elem: <Robots /> },
+  { path: "/projects", title: "Projects", elem: <Projects /> },
+  { path: "/resources", title: "Resources", elem: <Resources /> },
+  { path: "/sponsors", title: "Sponsors", elem: <Sponsors /> },
 ];
 
 export default function App() {
@@ -43,13 +44,15 @@ export default function App() {
       <AppBarMemo pages={pages} />
       <ScrollToTop />
       <Box sx={{ height: "5vh" }}></Box>
-      <Routes>
-        <Route path="/" element={<AboutMemo />} />
-        {pages.map((page) => (
-          <Route path={page.path} element={page.elem} key={page.path} />
-        ))}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense fallback={<div style={{ height: "100vh" }}></div>}>
+        <Routes>
+          <Route path="/" element={<About />} />
+          {pages.map((page) => (
+            <Route path={page.path} element={page.elem} key={page.path} />
+          ))}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
       <FooterMemo />
     </HashRouter>
   );

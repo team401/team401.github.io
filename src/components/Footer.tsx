@@ -9,7 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YoutubeIcon from "@mui/icons-material/YouTube";
-import theme from "./theme";
+import theme from "../theme";
 
 const socials = [
   {

@@ -14,9 +14,9 @@ import CardContent from "@mui/material/CardContent";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import Page from "./Page";
-import HeaderCard from "./HeaderCard";
-import StyledButton from "./StyledButton";
+import Page from "./components/Page";
+import HeaderCard from "./components/HeaderCard";
+import StyledButton from "./components/StyledButton";
 import { robots } from "./RobotsData";
 
 export default function Robots() {
