@@ -3,8 +3,10 @@ import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import AppBarMemo from "./TeamAppBar";
-import AboutMemo from "./AboutPage";
+import ScrollToTop from "./ScrollToTop";
 import FooterMemo from "./Footer";
+
+import AboutMemo from "./AboutPage";
 import OutreachMemo from "./OutreachPage";
 import ResourcesMemo from "./ResourcesPage";
 import SponsorsMemo from "./SponsorsPage";
@@ -39,6 +41,7 @@ export default function App() {
   return (
     <HashRouter>
       <AppBarMemo pages={pages} />
+      <ScrollToTop />
       <Box sx={{ height: "5vh" }}></Box>
       <Routes>
         <Route path="/" element={<AboutMemo />} />
