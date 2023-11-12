@@ -1,18 +1,18 @@
 import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
 import { grey } from '@mui/material/colors';
 
-// A custom theme for this app
 const theme = createTheme({
   typography: {
     fontFamily: [
-      'Montserrat',
+      '"Helvetica Neue"',
+      'Helvetica',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       'Roboto',
       'Arial',
       'sans-serif',
+      'Montserrat',
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
@@ -25,9 +25,6 @@ const theme = createTheme({
     },
     secondary: {
       main: '#d35401',
-    },
-    error: {
-      main: red.A400,
     },
 
     background: {

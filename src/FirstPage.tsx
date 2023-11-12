@@ -1,15 +1,6 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-import {
-  Box,
-  Typography,
-  Button,
-  Link,
-  Card,
-  CardContent,
-  CardActions,
-} from "@mui/material";
+import { Box, Typography, Card, CardContent, CardActions } from "@mui/material";
 
 import { firstSections } from "./FirstData";
 import HeaderCard from "./HeaderCard";

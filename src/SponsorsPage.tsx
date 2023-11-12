@@ -1,7 +1,6 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { Button, Card, Grid, Link, Stack, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 import { Divider } from "@mui/material";
 
 import Page from "./Page";

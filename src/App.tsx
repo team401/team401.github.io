@@ -12,6 +12,7 @@ import InvolvedMemo from "./InvolvedPage";
 import RobotsMemo from "./RobotsPage";
 import CoalitionMemo from "./CoalitionPage";
 import FirstMemo from "./FirstPage";
+import ProjectsMemo from "./Projects";
 
 export type PageType = {
   path: string;
@@ -29,6 +30,7 @@ const pages: PageType[] = [
   { path: "/first", title: "About FIRST", elem: <FirstMemo /> },
   { path: "/involved", title: "Join Us", elem: <InvolvedMemo /> },
   { path: "/robots", title: "Robots", elem: <RobotsMemo /> },
+  { path: "/projects", title: "Projects", elem: <ProjectsMemo /> },
   { path: "/resources", title: "Resources", elem: <ResourcesMemo /> },
   { path: "/sponsors", title: "Sponsors", elem: <SponsorsMemo /> },
 ];
