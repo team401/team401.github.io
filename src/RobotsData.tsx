@@ -180,7 +180,7 @@ export const robots: RobotInfo[] = [
     techBinder:
       "https://docs.google.com/spreadsheets/d/1XpBeeOpbmxH3wOLGNq6xpUi1ik0mAV4oYa5G_X_atjs/edit?usp=share_link",
     notes:
-      "Leviathan's season was cut short due to the cancellation of the 2020 FRC season. Many of Leviathan's designs and components saw use in our 2021 robot and 2022 and 2023 offseason robots.",
+      "Mamba's season was cut short due to the cancellation of the 2020 FRC season. Many of Mamba's designs and components saw use in our 2021 robot and 2022 and 2023 offseason robots.",
     events: [
       new EventInfo(
         "FIRST Chesapeake Richmond VA District Event",
