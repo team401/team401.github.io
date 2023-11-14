@@ -9,7 +9,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import { Divider, List, ListItemButton, ListItemText } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "../img/logo_white.png";
 import { PageType } from "../App";
@@ -61,14 +61,20 @@ export default function TeamAppBar(props: { pages: PageType[] }) {
             >
               {props.pages.map((page) => (
                 <Box key={page.title}>
-                  <ListItemButton component={Link} to={page.path}>
-                    <ListItemText
-                      primary={page.title}
-                      primaryTypographyProps={{
-                        fontSize: 18,
-                      }}
-                    />
-                  </ListItemButton>
+                  <NavLink to={page.path} style={{ textDecoration: "none" }}>
+                    {({ isActive }) => (
+                      <ListItemButton>
+                        <ListItemText
+                          primary={page.title}
+                          primaryTypographyProps={{
+                            fontSize: 18,
+                            fontWeight: isActive ? "800" : "",
+                            color: "text.secondary",
+                          }}
+                        />
+                      </ListItemButton>
+                    )}
+                  </NavLink>
                   <Divider />
                 </Box>
               ))}
@@ -108,21 +114,24 @@ export default function TeamAppBar(props: { pages: PageType[] }) {
             {props.pages.map((page) => (
               <Box key={page.path}>
                 {page.path === "/" ? null : (
-                  <Button
-                    component={Link}
-                    to={page.path}
-                    onClick={toggleDrawer(false)}
-                    size="large"
-                    sx={{
-                      my: 0,
-                      py: 0,
-                      color: "white",
-                      display: "block",
-                      textAlign: "center",
-                    }}
-                  >
-                    {page.title}
-                  </Button>
+                  <NavLink to={page.path} style={{ textDecoration: "none" }}>
+                    {({ isActive }) => (
+                      <Button
+                        onClick={toggleDrawer(false)}
+                        size="large"
+                        sx={{
+                          my: 0,
+                          py: 0,
+                          color: "white",
+                          display: "block",
+                          textAlign: "center",
+                          fontWeight: isActive ? "800" : "",
+                        }}
+                      >
+                        {page.title}
+                      </Button>
+                    )}
+                  </NavLink>
                 )}
               </Box>
             ))}
