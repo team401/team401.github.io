@@ -17,6 +17,7 @@ import gentoo from "./img/sponsors/gentoo.png";
 import aci from "./img/sponsors/aci.png";
 import intuitive from "./img/sponsors/intuitive.png";
 import ptc from "./img/sponsors/ptc.png";
+import ebat from "./img/sponsors/ebat.png";
 
 class Sponsor {
   img: string;
@@ -113,6 +114,7 @@ export const SponsorList: SponsorTier[] = [
       "http://gentootech.com/",
       "lazy"
     ),
+    new Sponsor(ebat, "EBAT Consulting", "https://ebatconsulting.com/", "lazy"),
     new Sponsor(aci, "ACI", "https://aciwebs.com/", "lazy"),
   ]),
 ];
