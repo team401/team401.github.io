@@ -25,13 +25,13 @@ export type PageType = {
 
 const unfinished: PageType[] = [
   { path: "/outreach", title: "Outreach", elem: <Outreach /> },
-  { path: "/coalition", title: "Coalition", elem: <Coalition /> },
 ];
 
 const pages: PageType[] = [
   { path: "/", title: "About Us", elem: <About /> },
   { path: "/first", title: "About FIRST", elem: <FIRST /> },
   { path: "/involved", title: "Join Us", elem: <Involved /> },
+  { path: "/coalition", title: "Coalition", elem: <Coalition /> },
   { path: "/robots", title: "Robots", elem: <Robots /> },
   { path: "/projects", title: "Projects", elem: <Projects /> },
   { path: "/resources", title: "Resources", elem: <Resources /> },

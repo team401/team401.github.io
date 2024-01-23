@@ -18,6 +18,7 @@ import aci from "./img/sponsors/aci.png";
 import intuitive from "./img/sponsors/intuitive.png";
 import ptc from "./img/sponsors/ptc.png";
 import ebat from "./img/sponsors/ebat.png";
+import molex from "./img/sponsors/molex.png";
 
 class Sponsor {
   img: string;
@@ -86,6 +87,7 @@ export const SponsorList: SponsorTier[] = [
       "lazy"
     ),
     new Sponsor(ptc, "PTC", "https://www.ptc.com", "lazy"),
+    new Sponsor(molex, "Molex", "https://www.molex.com", "lazy"),
     new Sponsor(kroger, "Kroger", "https://kroger.com/", "lazy"),
     new Sponsor(
       goodShepherd,
