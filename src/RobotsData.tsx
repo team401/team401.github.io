@@ -1,3 +1,5 @@
+import robot2024 from "./img/robots/small2024.png";
+import robot2024full from "./img/robots/big/big2024.png";
 import robot2023 from "./img/robots/small2023.png";
 import robot2023full from "./img/robots/big/big2023.png";
 import robot2022 from "./img/robots/small2022.png";
@@ -76,6 +78,26 @@ class RobotInfo {
 }
 
 export const robots: RobotInfo[] = [
+  new RobotInfo(2024, "Apep", {
+    record: "0-0-0",
+    img: robot2024,
+    loading: "eager",
+    full: robot2024full,
+    weight: "119.1",
+    codeLink: "https://github.com/team401/2024-Robot-Code",
+    events: [
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA District Event",
+        [""],
+        "2024vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Falls Church VA District Event",
+        [" "],
+        "2024vafal"
+      ),
+    ],
+  }),
   new RobotInfo(2023, "Mušḫuššu", {
     record: "58-28-2",
     img: robot2023,

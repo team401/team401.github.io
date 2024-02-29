@@ -25,7 +25,7 @@ export default function Robots() {
       <HeaderCard title="Robots">
         <>
           We're proud to publish accomplishments, CAD models, technical
-          documentation, and robot code for all of our robots from the past nine
+          documentation, and robot code for all of our robots from the past ten
           years. If you have any questions about any of our robots please{" "}
           <Link href="mailto:401frc@gmail.com" target="_blank">
             contact us
