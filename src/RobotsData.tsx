@@ -79,22 +79,27 @@ class RobotInfo {
 
 export const robots: RobotInfo[] = [
   new RobotInfo(2024, "Apep", {
-    record: "0-0-0",
+    record: "8-10-0",
     img: robot2024,
     loading: "eager",
     full: robot2024full,
-    weight: "119.1",
+    weight: "123.7",
     codeLink: "https://github.com/team401/2024-Robot-Code",
     events: [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA District Event",
-        [""],
+        ["FIRST Impact Award"],
         "2024vabla"
       ),
       new EventInfo(
         "FIRST Chesapeake Falls Church VA District Event",
         [" "],
         "2024vafal"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        [" "],
+        "2024chcmp"
       ),
     ],
   }),
