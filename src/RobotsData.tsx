@@ -79,12 +79,16 @@ class RobotInfo {
 
 export const robots: RobotInfo[] = [
   new RobotInfo(2024, "Apep", {
-    record: "8-10-0",
+    record: "15-17-1",
     img: robot2024,
     loading: "eager",
     full: robot2024full,
     weight: "123.7",
+    cadLink:
+      "https://cad.onshape.com/documents/b4f4b0ec75c0805972d6472c/w/391119eb1d4c6c3e4bb5abc8/e/01dc9e2cfecf88c5ca32652c",
     codeLink: "https://github.com/team401/2024-Robot-Code",
+    techBinder:
+      "https://drive.google.com/file/d/1Pqnk0rinKgiY-jYQC55X-1GvxYsD4fWK/view?usp=sharing",
     events: [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA District Event",
@@ -93,7 +97,7 @@ export const robots: RobotInfo[] = [
       ),
       new EventInfo(
         "FIRST Chesapeake Falls Church VA District Event",
-        [" "],
+        ["Engineering Inspiration Award"],
         "2024vafal"
       ),
       new EventInfo(
