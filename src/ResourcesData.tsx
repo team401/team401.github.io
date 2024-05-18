@@ -7,6 +7,7 @@ import taxFilings from "./img/resources/taxFilings.png";
 import grantTracking from "./img/resources/grantTracking.png";
 import batteryBOM from "./img/resources/batteryBOM.png";
 import calendar from "./img/resources/calendar.png";
+import chsHubs from "./img/resources/chsHubs.png";
 
 import cd from "./img/resources/cd.png";
 import mkcad from "./img/resources/mkcad.png";
@@ -52,6 +53,13 @@ export const ResourcesList: ResourceSection[] = [
     "Team Resources",
     "These are resources Team 401 has developed and shares with the wider FRC community.",
     [
+      new Resource(
+        "https://www.chshubs.org/",
+        "CHS Hubs",
+        "An initiative to connect FIRST teams with each other to share 3D printing and machining resources.",
+        chsHubs,
+        "eager"
+      ),
       new Resource(
         "https://docs.google.com/spreadsheets/d/15ujRH0sOLQmsJWa9tElm-Wd-a0wIqmZ-DhLu3vUNlCg/edit?usp=sharing",
         "Build Season Planning",
