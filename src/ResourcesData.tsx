@@ -1,5 +1,5 @@
 import gantt from "./img/resources/gantt.png";
-import chsStats from "./img/resources/chsStats.png";
+import wire from "./img/resources/wire.png";
 import vouchers from "./img/resources/vouchers.png";
 import wiring from "./img/resources/wiring.png";
 import firstChoice from "./img/resources/firstChoice.png";
@@ -75,13 +75,6 @@ export const ResourcesList: ResourceSection[] = [
         "eager"
       ),
       new Resource(
-        "https://docs.google.com/spreadsheets/d/1se53XvWg8KnN6T9wWMKm41tx3NCOy2c5cx84maoPmjs/edit#gid=1928859039",
-        "CHS District Stats",
-        "Spreadsheets and statistics tracking the competitive history and health of FIRST Chesapeake FRC teams",
-        chsStats,
-        "eager"
-      ),
-      new Resource(
         "https://docs.google.com/spreadsheets/d/1Dg0gxjZbx33nO9YQaJIbfiLfJ-07Dq4DqlJkglyZsq0/edit?usp=sharing",
         "FRC Wiring",
         "Multiple sheets for tracking control system component wiring on FRC robots and mapping operator controls layouts.",
@@ -121,6 +114,13 @@ export const ResourcesList: ResourceSection[] = [
         "Team 401 Battery Bill Of Materials",
         "Our preferred battery construction parts and where to buy them.",
         batteryBOM,
+        "lazy"
+      ),
+      new Resource(
+        "https://docs.google.com/spreadsheets/d/1ujplvwg2ksVi8OsCK0x998eAu5zq8-4fczOdniB3DgY/edit?usp=sharing",
+        "Battery Wire Math",
+        "Specifications and math for choosing FRC battery wires for your robot.",
+        wire,
         "lazy"
       ),
     ]
