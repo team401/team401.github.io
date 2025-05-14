@@ -6,6 +6,7 @@ import driverStation from "./img/projects/DriverStation.png";
 import bBot from "./img/projects/2023BBot.png";
 import swerveCover from "./img/projects/MK4iCover.png";
 import wiringClip from "./img/projects/WiringClip.png";
+import combined from "./img/projects/combined.png";
 
 type projectDetails = {
   img: string;
@@ -16,6 +17,23 @@ type projectDetails = {
 };
 
 export const projects: projectDetails[] = [
+  {
+    img: combined,
+    title: "Combined Electronics",
+    para: (
+      <>
+        Developed for the 2025 FRC season this combined electrical enclosure is
+        a 3D printed housing for a roboRIO, a CANivore, a Pigeon 2.0 IMU, and a{" "}
+        <i>REV</i> Mini Power Module. The combined electrical package provides
+        two layers of swarf protection for all unused IO ports, converts all
+        used ports into latching polarized Molex SL connections, and provides 15
+        cable tie slots for strain relieving IO wires. Each corner features
+        modular, indexable cable tie attachment inserts.
+      </>
+    ),
+    loading: "eager",
+    link: "https://cad.onshape.com/documents/ab765f16e2cb17b316b39f19/w/04844148f83fd4607f7aa410/e/37a362848ba7d9741a14a2ab",
+  },
   {
     img: bBot,
     title: "2023 Offseason Robot",

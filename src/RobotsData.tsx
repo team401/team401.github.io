@@ -1,3 +1,5 @@
+import robot2025 from "./img/robots/small2025.png";
+import robot2025full from "./img/robots/big/big2025.png";
 import robot2024 from "./img/robots/small2024.png";
 import robot2024full from "./img/robots/big/big2024.png";
 import robot2023 from "./img/robots/small2023.png";
@@ -78,8 +80,37 @@ class RobotInfo {
 }
 
 export const robots: RobotInfo[] = [
+  new RobotInfo(2025, "Hydrus", {
+    record: "23-20-0",
+    img: robot2025,
+    loading: "eager",
+    full: robot2025full,
+    weight: "113.6",
+    cadLink:
+      "https://cad.onshape.com/documents/179fc1f72237b554acee0f6d/w/33b69fd29cb5d10473237147",
+    codeLink: "https://github.com/team401/2025-Robot-Code",
+    techBinder:
+      "https://drive.google.com/file/d/143egMihssrTHBdfj-yz3B5FTaUyvsquM/view?usp=sharing",
+    events: [
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA District Event",
+        ["FIRST Impact Award"],
+        "2025vabla"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Portsmouth VA District Event",
+        ["Engineering Inspiration Award"],
+        "2025vapor"
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        [" "],
+        "2025chcmp"
+      ),
+    ],
+  }),
   new RobotInfo(2024, "Apep", {
-    record: "23-23-2",
+    record: "35-35-2",
     img: robot2024,
     loading: "eager",
     full: robot2024full,
@@ -105,6 +136,8 @@ export const robots: RobotInfo[] = [
         [" "],
         "2024chcmp"
       ),
+      new EventInfo("Blue Ridge Brawl", [" "], "2024vabrb"),
+      new EventInfo("Rumble in the Roads", ["Pipeline Award"], "2024vagi2"),
     ],
   }),
   new RobotInfo(2023, "Mušḫuššu", {

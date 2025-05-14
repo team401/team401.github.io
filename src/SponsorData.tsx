@@ -4,21 +4,13 @@ import bae from "./img/sponsors/bae.png";
 import mcps from "./img/sponsors/mcps.png";
 import auvsi from "./img/sponsors/auvsi.png";
 import rev from "./img/sponsors/TeamREV.png";
-import nichols from "./img/sponsors/nichols.png";
 import aep from "./img/sponsors/aep.png";
-import schoolOfEd from "./img/sponsors/schoolOfEd.png";
 import blacksburgEye from "./img/sponsors/BlacksburgEye.png";
 import goodShepherd from "./img/sponsors/goodShepherd.png";
 import nest from "./img/sponsors/nest.png";
-import torc from "./img/sponsors/torc.png";
-import rtx from "./img/sponsors/rtx.png";
-import corning from "./img/sponsors/corning.png";
-import gentoo from "./img/sponsors/gentoo.png";
-import aci from "./img/sponsors/aci.png";
 import intuitive from "./img/sponsors/intuitive.png";
 import ptc from "./img/sponsors/ptc.png";
 import ebat from "./img/sponsors/ebat.png";
-import molex from "./img/sponsors/molex.png";
 
 class Sponsor {
   img: string;
@@ -68,9 +60,6 @@ export const SponsorList: SponsorTier[] = [
       "https://ghaasfoundation.org/content/ghf/en/home.html",
       "eager"
     ),
-    new Sponsor(rtx, "RTX", "https://www.rtx.com/", "eager"),
-    new Sponsor(corning, "Corning", "https://www.corning.com", "lazy"),
-    new Sponsor(torc, "TORC Robotics", "https://torc.ai/", "lazy"),
     new Sponsor(
       blacksburgEye,
       "Blacksburg Eye Associates",
@@ -87,7 +76,6 @@ export const SponsorList: SponsorTier[] = [
       "lazy"
     ),
     new Sponsor(ptc, "PTC", "https://www.ptc.com", "lazy"),
-    new Sponsor(molex, "Molex", "https://www.molex.com", "lazy"),
     new Sponsor(kroger, "Kroger", "https://kroger.com/", "lazy"),
     new Sponsor(
       goodShepherd,
@@ -97,26 +85,7 @@ export const SponsorList: SponsorTier[] = [
     ),
   ]),
   new SponsorTier("Copperhead Sponsors", 4, [
-    new Sponsor(
-      schoolOfEd,
-      "Virginia Tech School of Education",
-      "https://liberalarts.vt.edu/departments-and-schools/school-of-education.html",
-      "lazy"
-    ),
-    new Sponsor(
-      nichols,
-      "Tammy Nichols, REALTOR",
-      "http://tammynicholsrealestate.com/",
-      "lazy"
-    ),
     new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/", "lazy"),
-    new Sponsor(
-      gentoo,
-      "Gentoo Technologies",
-      "http://gentootech.com/",
-      "lazy"
-    ),
     new Sponsor(ebat, "EBAT Consulting", "https://ebatconsulting.com/", "lazy"),
-    new Sponsor(aci, "ACI", "https://aciwebs.com/", "lazy"),
   ]),
 ];
