@@ -11,6 +11,7 @@ import nest from "./img/sponsors/nest.png";
 import intuitive from "./img/sponsors/intuitive.png";
 import ptc from "./img/sponsors/ptc.png";
 import ebat from "./img/sponsors/ebat.png";
+import aci from "./img/sponsors/aci.png";
 
 class Sponsor {
   img: string;
@@ -87,5 +88,6 @@ export const SponsorList: SponsorTier[] = [
   new SponsorTier("Copperhead Sponsors", 4, [
     new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/", "lazy"),
     new Sponsor(ebat, "EBAT Consulting", "https://ebatconsulting.com/", "lazy"),
+    new Sponsor(aci, "ACI", "https://aciwebs.com/", "lazy"),
   ]),
 ];
