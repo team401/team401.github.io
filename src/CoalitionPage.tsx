@@ -88,7 +88,7 @@ export default function Coalition() {
       link: "https://drive.google.com/file/d/1beJ20KlyDS6WM4ANM7p32m1NsxwMOnPR/view?usp=sharing",
       title: "Coalition Outline",
     },
-    { link: "mailto:401frc@gmail.com", title: "Email Us" },
+    { link: "mailto:team401@mcps.org", title: "Email Us" },
   ];
 
   return (
