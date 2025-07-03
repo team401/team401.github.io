@@ -14,7 +14,7 @@ export default function Sponsors() {
       link: "https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing",
       title: "Sponsor Flyer",
     },
-    { link: "mailto:401frc@gmail.com", title: "Email Us" },
+    { link: "mailto:team401@mcps.org", title: "Email Us" },
   ];
   return (
     <Page>
