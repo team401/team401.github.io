@@ -24,7 +24,7 @@ export default function Projects() {
           Projects are a key training activity for Team 401 and help us prepare
           for the robotics build and competition seasons. If you have questions
           about any of our projects please{" "}
-          <Link href="mailto:401frc@gmail.com" target="_blank">
+          <Link href="mailto:team401@mcps.org" target="_blank">
             contact us
           </Link>
           !
