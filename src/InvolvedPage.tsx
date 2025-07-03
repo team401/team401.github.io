@@ -15,7 +15,7 @@ export default function Involved() {
           Are you located in Montgomery County, Virginia and interested in
           joining Team 401 as a student or mentor? Find out more about our
           prerequisites and team structure in the sections below and then{" "}
-          <Link href="mailto:401frc@gmail.com" target="_blank">
+          <Link href="mailto:team401@mcps.org" target="_blank">
             contact us
           </Link>
           !
