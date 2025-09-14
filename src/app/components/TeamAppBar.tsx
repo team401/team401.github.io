@@ -34,6 +34,7 @@ export default function TeamAppBar() {
     { path: "/projects", title: "Projects" },
     { path: "/resources", title: "Resources" },
     { path: "/sponsors", title: "Sponsors" },
+    { path: "/calendar", title: "Calendar" },
   ];
 
   const [open, setOpen] = React.useState(false);
