@@ -53,7 +53,7 @@ export default function TeamAppBar() {
       setOpen(open);
     };
 
-  const logoImage = <RespImage src={logo} sizes="80px" />;
+  const logoImage = <RespImage src={logo} sizes="80px" priority={true} />;
 
   return (
     <AppBar position="fixed" style={{ background: "secondary" }}>

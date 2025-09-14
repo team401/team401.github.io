@@ -4,6 +4,7 @@ type imgProps = {
   src: StaticImageData;
   loading?: "eager" | "lazy";
   sizes?: string;
+  priority?: boolean;
 };
 
 export default function RespImage(props: imgProps) {
@@ -17,6 +18,7 @@ export default function RespImage(props: imgProps) {
         height: "auto",
       }}
       loading={props.loading}
+      priority={props.priority}
     />
   );
 }

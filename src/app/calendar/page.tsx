@@ -10,10 +10,59 @@ import bootstrap5Plugin from "@fullcalendar/bootstrap5";
 import "./bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import { Box } from "@mui/material";
+import {
+  Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  Button,
+  DialogActions,
+} from "@mui/material";
 import Page from "../components/Page";
+import React, { useMemo } from "react";
+import { EventClickArg } from "@fullcalendar/core/index.js";
+import { EventImpl } from "@fullcalendar/core/internal";
+import moment from "moment";
 
 export default function Calendar() {
+  const [selectedEvent, setSelectedEvent] = React.useState<EventImpl | null>(
+    null
+  );
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = (info: EventClickArg) => {
+    info.jsEvent.preventDefault();
+    setSelectedEvent(info.event);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedEvent(null);
+  };
+
+  const plugins = useMemo(
+    () => [
+      dayGridPlugin,
+      timeGridPlugin,
+      interactionPlugin,
+      googleCalendarPlugin,
+      bootstrap5Plugin,
+    ],
+    []
+  );
+
+  const eventSources = useMemo(
+    () => [
+      {
+        googleCalendarId:
+          "nnjousubqta8t6i1cgggohrkmo@group.calendar.google.com",
+      },
+    ],
+    []
+  );
+
   return (
     <Page>
       <Box
@@ -24,13 +73,7 @@ export default function Calendar() {
         }}
       >
         <FullCalendar
-          plugins={[
-            dayGridPlugin,
-            timeGridPlugin,
-            interactionPlugin,
-            googleCalendarPlugin,
-            bootstrap5Plugin,
-          ]}
+          plugins={plugins}
           themeSystem="bootstrap5"
           height={"calc(95vh - 103px - 64px)"}
           initialView="dayGridMonth"
@@ -40,12 +83,32 @@ export default function Calendar() {
             right: "dayGridMonth,timeGridWeek,timeGridDay",
           }}
           googleCalendarApiKey={process.env.NEXT_PUBLIC_CALENDAR_KEY}
-          events={{
-            googleCalendarId:
-              "nnjousubqta8t6i1cgggohrkmo@group.calendar.google.com",
-          }}
+          eventSources={eventSources}
+          eventClick={handleOpen}
         />
       </Box>
+      <Dialog onClose={handleClose} open={open}>
+        <DialogTitle>{selectedEvent?.title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {moment(selectedEvent?.startStr).format("LL")}
+          </DialogContentText>
+          <DialogContentText>
+            {moment(selectedEvent?.startStr).format("LT")} -{" "}
+            {moment(selectedEvent?.endStr).format("LT")}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions sx={{ justifyContent: "center" }}>
+          <Button
+            component="a"
+            variant="contained"
+            href={selectedEvent?.url}
+            target="_blank"
+          >
+            Event Link
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Page>
   );
 }
