@@ -10,13 +10,19 @@ import bootstrap5Plugin from "@fullcalendar/bootstrap5";
 import "./bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import Page from "../components/Page";
 import { Box } from "@mui/material";
+import Page from "../components/Page";
 
 export default function Calendar() {
   return (
     <Page>
-      <Box sx={{ backgroundColor: "white", p: 2 }}>
+      <Box
+        sx={{
+          backgroundColor: "white",
+          p: 2,
+          m: 0,
+        }}
+      >
         <FullCalendar
           plugins={[
             dayGridPlugin,
@@ -26,6 +32,7 @@ export default function Calendar() {
             bootstrap5Plugin,
           ]}
           themeSystem="bootstrap5"
+          height={"calc(95vh - 103px - 64px)"}
           initialView="dayGridMonth"
           headerToolbar={{
             left: "prev,next today",

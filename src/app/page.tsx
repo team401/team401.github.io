@@ -56,8 +56,8 @@ export default function About() {
   return (
     <>
       <RespImage src={teamPhoto} sizes="100vw" loading="eager" />
-      <Container maxWidth="lg" sx={{ pt: 2 }}>
-        <Box textAlign="center">
+      <Container maxWidth="lg" sx={{ pt: 0 }}>
+        <Box textAlign="center" sx={{ pt: 0 }}>
           <Grid container rowSpacing={5} columnSpacing={2}>
             <Grid xs={12}>
               <Typography
@@ -65,8 +65,8 @@ export default function About() {
                 align="center"
                 component="h1"
                 sx={{
-                  m: 7,
-                  fontWeight: 900,
+                  m: 2,
+                  fontWeight: 800,
                   color: theme.palette.primary.main,
                 }}
               >
@@ -78,14 +78,14 @@ export default function About() {
                 color="text.secondary"
                 component="h1"
                 sx={{
-                  m: 2,
+                  m: 1,
                 }}
               >
                 &quot;Docendo Discimus&quot; - By Teaching, We Learn.
               </Typography>
             </Grid>
             {aboutSections.map((section) => (
-              <Grid container key={section.heading}>
+              <Grid container key={section.heading} sx={{ pt: 0 }}>
                 <Grid xs={12} md={6} maxWidth="100%">
                   <RespImage src={section.img} loading="eager" />
                 </Grid>
