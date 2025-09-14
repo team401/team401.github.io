@@ -6,10 +6,8 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import bootstrap5Plugin from "@fullcalendar/bootstrap5";
-
-import "./bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-
+import { EventClickArg } from "@fullcalendar/core/index.js";
+import { EventImpl } from "@fullcalendar/core/internal";
 import {
   Box,
   Dialog,
@@ -19,11 +17,12 @@ import {
   Button,
   DialogActions,
 } from "@mui/material";
-import Page from "../components/Page";
 import React, { useMemo } from "react";
-import { EventClickArg } from "@fullcalendar/core/index.js";
-import { EventImpl } from "@fullcalendar/core/internal";
 import moment from "moment";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+import "./bootstrap.min.css";
+import Page from "../components/Page";
 
 export default function Calendar() {
   const [selectedEvent, setSelectedEvent] = React.useState<EventImpl | null>(
@@ -85,6 +84,8 @@ export default function Calendar() {
           googleCalendarApiKey={process.env.NEXT_PUBLIC_CALENDAR_KEY}
           eventSources={eventSources}
           eventClick={handleOpen}
+          eventBackgroundColor="#861f41"
+          eventDisplay="block"
         />
       </Box>
       <Dialog onClose={handleClose} open={open}>
