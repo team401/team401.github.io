@@ -13,7 +13,7 @@ export default function StyledButton(props: btnProps) {
     <Button
       component={Link}
       href={props.link}
-      key={props.key ? props.key : ""}
+      key={props.key}
       target="_blank"
       size={props.small ? "medium" : "large"}
       variant="contained"

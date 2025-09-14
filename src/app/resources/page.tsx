@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import { Card, Grid, Link, Typography } from "@mui/material";
 
@@ -35,13 +37,13 @@ export default function Resources() {
           >
             {section.description}
           </Typography>
-          <Grid item container xs={12}>
+          <Grid item container xs={12} sx={{ pt: 1 }}>
             {section.resources.map((resource) => (
-              <Grid item container md={6} sm={12} key={resource.title}>
+              <Grid item container md={6} xs={12} key={resource.title}>
                 <Grid
                   container
                   item
-                  sx={{ m: 1, p: 1 }}
+                  sx={{ m: 1, px: 1, pb: { xs: 8, sm: 42, md: 10, lg: 1 } }}
                   justifyItems="start"
                   justifyContent="start"
                   flexDirection="column"
@@ -66,7 +68,7 @@ export default function Resources() {
                       <RespImage
                         src={resource.img}
                         loading={resource.loading}
-                        sizes="80vh"
+                        sizes="60vh"
                       />
                     )}
                   </Link>
