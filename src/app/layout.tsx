@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import * as React from "react";
 import { Suspense } from "react";
-import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, GlobalStyles, ThemeProvider } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 import AppBarMemo from "./components/TeamAppBar";
@@ -25,6 +25,14 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            <GlobalStyles
+              styles={{
+                "button::-moz-focus-inner": {
+                  border: 0,
+                  padding: 0,
+                },
+              }}
+            />
             <AppBarMemo />
             <ScrollToTop />
             <Box sx={{ height: "5vh" }}></Box>

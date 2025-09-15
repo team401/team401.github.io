@@ -27,14 +27,14 @@ export default function TeamAppBar() {
 
   const pages: PageType[] = [
     { path: "/", title: "About Us" },
-    { path: "/first", title: "About FIRST" },
-    { path: "/involved", title: "Join Us" },
-    { path: "/coalition", title: "Coalition" },
-    { path: "/robots", title: "Robots" },
-    { path: "/projects", title: "Projects" },
-    { path: "/resources", title: "Resources" },
-    { path: "/sponsors", title: "Sponsors" },
-    { path: "/calendar", title: "Calendar" },
+    { path: "/first/", title: "About FIRST" },
+    { path: "/involved/", title: "Join Us" },
+    { path: "/coalition/", title: "Coalition" },
+    { path: "/robots/", title: "Robots" },
+    { path: "/projects/", title: "Projects" },
+    { path: "/resources/", title: "Resources" },
+    { path: "/sponsors/", title: "Sponsors" },
+    { path: "/calendar/", title: "Calendar" },
   ];
 
   const [open, setOpen] = React.useState(false);
@@ -59,8 +59,18 @@ export default function TeamAppBar() {
     <AppBar position="fixed" style={{ background: "secondary" }}>
       <Container disableGutters maxWidth={false}>
         <Toolbar disableGutters>
-          <Link href="/">
-            <Box sx={{ display: { xs: "none", lg: "flex" }, paddingLeft: 2 }}>
+          <Link
+            href="/"
+            style={{ display: "inline-flex", alignItems: "center" }}
+          >
+            <Box
+              sx={{
+                display: { xs: "none", lg: "flex" },
+                paddingLeft: 2,
+                width: "auto",
+                flex: "0 0 auto",
+              }}
+            >
               {logoImage}
             </Box>
           </Link>
@@ -78,8 +88,12 @@ export default function TeamAppBar() {
                         primary={page.title}
                         primaryTypographyProps={{
                           fontSize: 18,
-                          fontWeight: page.path == pathname ? "800" : "",
+                          fontWeight: page.path === pathname ? "800" : "",
                           color: "text.secondary",
+                        }}
+                        sx={{
+                          textDecoration:
+                            page.path === pathname ? "underline" : "none",
                         }}
                       />
                     </ListItemButton>
@@ -101,8 +115,23 @@ export default function TeamAppBar() {
               <MenuIcon />
             </IconButton>
           </Box>
-          <Link href="/">
-            <Box sx={{ display: { xs: "flex", lg: "none" } }}>{logoImage}</Box>
+          <Link
+            href="/"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              textDecoration: "none",
+            }}
+          >
+            <Box
+              sx={{
+                display: { xs: "flex", lg: "none" },
+                width: "auto",
+                flex: "0 0 auto",
+              }}
+            >
+              {logoImage}
+            </Box>
           </Link>
           <Typography
             variant="h5"
@@ -133,7 +162,9 @@ export default function TeamAppBar() {
                         color: "white",
                         display: "block",
                         textAlign: "center",
-                        fontWeight: page.path == pathname ? "800" : "",
+                        fontWeight: page.path == pathname ? "800" : "100",
+                        textDecoration:
+                          page.path === pathname ? "underline" : "none",
                       }}
                     >
                       {page.title}
