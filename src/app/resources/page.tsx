@@ -66,7 +66,7 @@ export default function Resources() {
                   <Link href={resource.link} target="_blank">
                     {resource.img && (
                       <RespImage
-                        src={resource.img}
+                        src={resource.img.src}
                         loading={resource.loading}
                         sizes="60vh"
                       />

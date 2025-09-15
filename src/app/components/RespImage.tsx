@@ -1,24 +1,22 @@
-import Image, { StaticImageData } from "next/image";
-
 type imgProps = {
-  src: StaticImageData;
+  src: string;
   loading?: "eager" | "lazy";
   sizes?: string;
   priority?: boolean;
+  height?: string;
 };
 
 export default function RespImage(props: imgProps) {
   return (
-    <Image
+    <img
       alt=""
       src={props.src}
       sizes={props.sizes}
       style={{
         width: "100%",
-        height: "auto",
+        height: props.height ?? "auto",
       }}
       loading={props.loading}
-      priority={props.priority}
     />
   );
 }

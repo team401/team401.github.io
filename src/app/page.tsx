@@ -55,7 +55,7 @@ export default function About() {
 
   return (
     <>
-      <RespImage src={teamPhoto} sizes="100vw" loading="eager" />
+      <RespImage src={teamPhoto.src} sizes="100vw" loading="eager" />
       <Container maxWidth="lg" sx={{ pt: 0 }}>
         <Box textAlign="center" sx={{ pt: 0 }}>
           <Grid container rowSpacing={5} columnSpacing={2}>
@@ -87,7 +87,7 @@ export default function About() {
             {aboutSections.map((section) => (
               <Grid container key={section.heading} sx={{ pt: 0 }}>
                 <Grid xs={12} md={6} maxWidth="100%">
-                  <RespImage src={section.img} loading="eager" />
+                  <RespImage src={section.img.src} loading="eager" />
                 </Grid>
                 <Grid xs={12} md={6}>
                   <Paper sx={{ p: 3, minHeight: "100%" }}>
