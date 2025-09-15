@@ -51,7 +51,7 @@ export default function Projects() {
               textAlign="center"
             >
               <Link href={project.link} target="_blank">
-                <RespImage src={project.img} loading={project.loading} />
+                <RespImage src={project.img.src} loading={project.loading} />
               </Link>
             </Grid>
             <Grid xs={12} item md={6} marginBottom={{ xs: 5, md: 0 }}>

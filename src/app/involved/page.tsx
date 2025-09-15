@@ -35,7 +35,7 @@ export default function Involved() {
               maxWidth="100%"
               marginBottom={{ xs: 1, md: 0 }}
             >
-              <RespImage src={section.img} loading={section.loading} />
+              <RespImage src={section.img.src} loading={section.loading} />
             </Grid>
             <Grid xs={12} md={6} marginBottom={{ xs: 6, md: 0 }}>
               <Paper sx={{ p: 3, minHeight: "100%" }}>

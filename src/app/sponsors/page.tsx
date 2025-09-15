@@ -86,7 +86,7 @@ export default function Sponsors() {
                 >
                   <Link href={sponsor.link} target="_blank">
                     <RespImage
-                      src={sponsor.img}
+                      src={sponsor.img.src}
                       loading={sponsor.loading}
                       sizes={(10 - tier.size) * 25 + "vw"}
                     />

@@ -51,7 +51,7 @@ export default function Robots() {
                   src: robot.full.src,
                 }}
               >
-                <RespImage src={robot.img} loading={robot.loading} />
+                <RespImage src={robot.img.src} loading={robot.loading} />
               </Zoom>
             </Grid>
             <Grid
