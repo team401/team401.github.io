@@ -33,6 +33,10 @@ jobs:
         with:
           node-version: 22
           cache: "npm"
+      - name: Add Environment Variables
+        env:
+          NEXT_PUBLIC_CALENDAR_KEY: ${{ secrets.NEXT_PUBLIC_CALENDAR_KEY }}
+        run: echo "Environment variable configured."
 
       - name: Install dependencies
         run: npm install
