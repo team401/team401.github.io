@@ -53,7 +53,9 @@ export default function TeamAppBar() {
       setOpen(open);
     };
 
-  const logoImage = <RespImage src={logo.src} height="30px" priority={true} />;
+  const logoImage = (
+    <RespImage src={logo.src} height="30px" width="70px" priority={true} />
+  );
 
   return (
     <AppBar position="fixed" style={{ background: "secondary" }}>
@@ -88,7 +90,7 @@ export default function TeamAppBar() {
                         primary={page.title}
                         primaryTypographyProps={{
                           fontSize: 18,
-                          fontWeight: page.path === pathname ? "800" : "",
+                          fontWeight: page.path === pathname ? "800" : "400",
                           color: "text.secondary",
                         }}
                         sx={{
@@ -162,7 +164,7 @@ export default function TeamAppBar() {
                         color: "white",
                         display: "block",
                         textAlign: "center",
-                        fontWeight: page.path == pathname ? "800" : "100",
+                        fontWeight: page.path == pathname ? "800" : "400",
                         textDecoration:
                           page.path === pathname ? "underline" : "none",
                       }}

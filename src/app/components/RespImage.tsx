@@ -4,6 +4,7 @@ type imgProps = {
   sizes?: string;
   priority?: boolean;
   height?: string;
+  width?: string;
 };
 
 export default function RespImage(props: imgProps) {
@@ -13,7 +14,7 @@ export default function RespImage(props: imgProps) {
       src={props.src}
       sizes={props.sizes}
       style={{
-        width: "100%",
+        width: props.width ?? "100%",
         height: props.height ?? "auto",
       }}
       loading={props.loading}
