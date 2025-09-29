@@ -56,7 +56,7 @@ export default function Calendar() {
     () => [
       {
         googleCalendarId:
-          "nnjousubqta8t6i1cgggohrkmo@group.calendar.google.com",
+          "c_bc0c9aa60cff0cf0270757b3b55043c4656553455e3b6fca1d121d4f082f1e3c@group.calendar.google.com",
       },
     ],
     []

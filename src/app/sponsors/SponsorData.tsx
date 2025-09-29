@@ -6,12 +6,12 @@ import auvsi from "../img/sponsors/auvsi.png";
 import rev from "../img/sponsors/TeamREV.png";
 import aep from "../img/sponsors/aep.png";
 import blacksburgEye from "../img/sponsors/BlacksburgEye.png";
-import goodShepherd from "../img/sponsors/goodShepherd.png";
 import nest from "../img/sponsors/nest.png";
 import intuitive from "../img/sponsors/intuitive.png";
 import ptc from "../img/sponsors/ptc.png";
 import ebat from "../img/sponsors/ebat.png";
 import aci from "../img/sponsors/aci.png";
+import online_metals from "../img/sponsors/online_metals.png";
 import { StaticImageData } from "next/image";
 
 class Sponsor {
@@ -79,16 +79,16 @@ export const SponsorList: SponsorTier[] = [
     ),
     new Sponsor(ptc, "PTC", "https://www.ptc.com", "lazy"),
     new Sponsor(kroger, "Kroger", "https://kroger.com/", "lazy"),
-    new Sponsor(
-      goodShepherd,
-      "Good Shepherd Chuch of the Brethren",
-      "https://www.goodshepherdblacksburg.org/",
-      "lazy"
-    ),
   ]),
   new SponsorTier("Copperhead Sponsors", 4, [
     new Sponsor(nest, "Nest Realty", "https://www.nestrealty.com/", "lazy"),
     new Sponsor(ebat, "EBAT Consulting", "https://ebatconsulting.com/", "lazy"),
     new Sponsor(aci, "ACI", "https://aciwebs.com/", "lazy"),
+    new Sponsor(
+      online_metals,
+      "Online Metals",
+      "https://onlinemetals.com/",
+      "lazy"
+    ),
   ]),
 ];
