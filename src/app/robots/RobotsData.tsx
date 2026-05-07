@@ -83,7 +83,7 @@ class RobotInfo {
 }
 
 export const robots: RobotInfo[] = [
-  new RobotInfo(2025, "Typhon", {
+  new RobotInfo(2026, "Typhon", {
     record: "35-30-0",
     img: robot2026,
     loading: "eager",
