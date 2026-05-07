@@ -1,3 +1,5 @@
+import robot2026 from "../img/robots/small2026.png";
+import robot2026full from "../img/robots/big/big2026.png";
 import robot2025 from "../img/robots/small2025.png";
 import robot2025full from "../img/robots/big/big2025.png";
 import robot2024 from "../img/robots/small2024.png";
@@ -62,7 +64,7 @@ class RobotInfo {
       notes?: string;
       events?: EventInfo[];
       loading?: "eager" | "lazy" | undefined;
-    }
+    },
   ) {
     this.year = year;
     this.name = name;
@@ -81,6 +83,40 @@ class RobotInfo {
 }
 
 export const robots: RobotInfo[] = [
+  new RobotInfo(2025, "Typhon", {
+    record: "35-30-0",
+    img: robot2026,
+    loading: "eager",
+    full: robot2026full,
+    weight: "97.6",
+    cadLink:
+      "https://cad.onshape.com/documents/a381563585ee66adf32d648c/w/4ea655a21d8aa25431e97175/e/18927cada1652fcd9473c6bb",
+    codeLink: "https://github.com/team401/2026-Robot-Code",
+    techBinder:
+      "https://drive.google.com/file/d/1jHy_GGdGOlLQxSQ5HyPzvNv5vGcjdkzZ/view?usp=sharing",
+    events: [
+      new EventInfo(
+        "FIRST Chesapeake Blacksburg VA District Event",
+        ["Event Finalist", "FIRST Impact Award"],
+        "2026vabla",
+      ),
+      new EventInfo(
+        "FIRST Chesapeake Glenn Allen VA District Event",
+        ["Event Finalist", "Industrial Design Award"],
+        "2026vagle",
+      ),
+      new EventInfo(
+        "FIRST Chesapeake District Championship",
+        ["Team Spirit Award"],
+        "2026chcmp",
+      ),
+      new EventInfo(
+        "FIRST World Championship - Hopper Division",
+        ["Excellence in Engineering Award"],
+        "2026hop",
+      ),
+    ],
+  }),
   new RobotInfo(2025, "Hydrus", {
     record: "23-20-0",
     img: robot2025,
@@ -96,18 +132,16 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA District Event",
         ["FIRST Impact Award"],
-        "2025vabla"
+        "2025vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake Portsmouth VA District Event",
         ["Engineering Inspiration Award"],
-        "2025vapor"
+        "2025vapor",
       ),
-      new EventInfo(
-        "FIRST Chesapeake District Championship",
-        [" "],
-        "2025chcmp"
-      ),
+      new EventInfo("FIRST Chesapeake District Championship", [], "2025chcmp"),
+      new EventInfo("Blue Ridge Brawl", [" "], "2025vabrb"),
+      new EventInfo("Rumble in the Roads", [""], "2025vagle2"),
     ],
   }),
   new RobotInfo(2024, "Apep", {
@@ -125,17 +159,17 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA District Event",
         ["FIRST Impact Award"],
-        "2024vabla"
+        "2024vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake Falls Church VA District Event",
         ["Engineering Inspiration Award"],
-        "2024vafal"
+        "2024vafal",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         [" "],
-        "2024chcmp"
+        "2024chcmp",
       ),
       new EventInfo("Blue Ridge Brawl", [" "], "2024vabrb"),
       new EventInfo("Rumble in the Roads", ["Pipeline Award"], "2024vagi2"),
@@ -156,22 +190,22 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA District Event",
         ["Event Winner", "Industrial Design Award"],
-        "2023vabla"
+        "2023vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake Glen Allen VA District Event",
         ["Event Winner", "FIRST Impact Award"],
-        "2023vagle"
+        "2023vagle",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         ["Industrial Design Award"],
-        "2023chcmp"
+        "2023chcmp",
       ),
       new EventInfo(
         "FIRST World Championship - Galileo Division",
         [],
-        "2023gal"
+        "2023gal",
       ),
       new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2023vabrb"),
       new EventInfo("Rumble in the Roads", ["Ironclad Award"], "2023varr"),
@@ -192,22 +226,22 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Richmond VA 3/05 Event",
         ["Chairman's Award"],
-        "2022va305"
+        "2022va305",
       ),
       new EventInfo(
         "FIRST Chesapeake Richmond VA 3/20 Event",
         ["Event Winner"],
-        "2022va320"
+        "2022va320",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         ["Industrial Design Award"],
-        "2022chcmp"
+        "2022chcmp",
       ),
       new EventInfo(
         "FIRST World Championship - Galileo Division",
         [],
-        "2022gal"
+        "2022gal",
       ),
       new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2022vabrb"),
       new EventInfo("Rumble in the Roads", ["Event Winner"], "2022varr"),
@@ -229,7 +263,7 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "Infinite Rechage At Home Challenge - Cadmium Group",
         ["Skills Competition Winner"],
-        "2021irhcd"
+        "2021irhcd",
       ),
       new EventInfo("CHSy Champs", [], "2021vachs"),
     ],
@@ -250,7 +284,7 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Richmond VA District Event",
         ["Autonomous Award"],
-        "2020vagle"
+        "2020vagle",
       ),
     ],
   }),
@@ -269,12 +303,12 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA Event",
         ["Chairman's Award"],
-        "2019vabla"
+        "2019vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         ["Event Winner"],
-        "2019chcmp"
+        "2019chcmp",
       ),
       new EventInfo("FIRST World Championship - Curie Division", [], "2019cur"),
       new EventInfo("Blue Ridge Brawl", ["Event Winner"], "2019vabrb"),
@@ -295,17 +329,17 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Glen Allen VA Event",
         ["Event Winner", "Gracious Professionalism Award"],
-        "2018vagle"
+        "2018vagle",
       ),
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA Event",
         ["Chairman's Award"],
-        "2018vabla"
+        "2018vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         ["Event Finalist", "Judges' Award"],
-        "2018chcmp"
+        "2018chcmp",
       ),
       new EventInfo("FIRST World Championship - Daly Division", [], "2018dal"),
     ],
@@ -324,27 +358,27 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA Event",
         ["Quality Award"],
-        "2017vabla"
+        "2017vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake Portsmouth VA Event",
         ["Engineering Inspiration Award", "Safety Award"],
-        "2017vapor"
+        "2017vapor",
       ),
       new EventInfo(
         "FIRST Chesapeake District Championship",
         ["Engineering Inspiration Award"],
-        "2017chcmp"
+        "2017chcmp",
       ),
       new EventInfo(
         "FIRST World Championship - Archimedes Division",
         [],
-        "2017arc"
+        "2017arc",
       ),
       new EventInfo(
         "Rumble in the Roads",
         ["Event Finalist", "Ironclad Award"],
-        "2017varr"
+        "2017varr",
       ),
     ],
   }),
@@ -360,12 +394,12 @@ export const robots: RobotInfo[] = [
       new EventInfo(
         "FIRST Chesapeake Blacksburg VA Event",
         ["Imagery Award"],
-        "2016vabla"
+        "2016vabla",
       ),
       new EventInfo(
         "FIRST Chesapeake Doswell VA Event",
         ["Event Finalist"],
-        "2016vados"
+        "2016vados",
       ),
       new EventInfo("FIRST Chesapeake District Championship", [], "2016chcmp"),
       new EventInfo("FIRST World Championship - Archimedes", [], "2016arc"),
