@@ -18,7 +18,7 @@ type HeaderCardProps = {
 export default function HeaderCard(props: PropsWithChildren<HeaderCardProps>) {
   return (
     <Grid xs={12}>
-      <Card sx={{ mt: 2, mb: 4, p: 2, mx: 0 }}>
+      <Card sx={{ mb: 4, p: 2, mx: 0 }}>
         <Typography
           variant="h4"
           align="left"
