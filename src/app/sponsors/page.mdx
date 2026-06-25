@@ -1,0 +1,123 @@
+import HeaderCard from "../components/HeaderCard";
+import { Sponsor, SponsorTier } from "../components/SponsorTiers";
+
+export const headerButtons = [
+  {
+    link: "https://drive.google.com/file/d/1ADN1IktRIFjOAn-JNKDev6nowMtcLJxK/view?usp=sharing",
+    title: "Sponsor Flyer",
+  },
+  { link: "mailto:team401@mcps.org", title: "Email Us" },
+];
+
+<HeaderCard title="Sponsors" buttons={headerButtons}>
+Team 401 couldn't exist without the generous monetary, material, and mentorship
+support from all of our sponsors. We're thankful for the extensive support that
+we receive from our community.
+
+We're always excited to gain new sponsors, please reach out if you are
+interested in supporting the team!
+</HeaderCard>
+
+<SponsorTier name="Gold Sponsors" size={1}>
+<Sponsor
+  name="Montgomery County Public Schools"
+  link="https://mcps.org"
+  img="/img/sponsors/mcps.png"
+  loading="eager"
+/>
+</SponsorTier>
+
+<SponsorTier name="Silver Sponsors" size={3}>
+<Sponsor
+  name="REV Robotics"
+  link="https://www.revrobotics.com/"
+  img="/img/sponsors/TeamREV.png"
+  loading="eager"
+/>
+
+<Sponsor
+  name="Gene Haas Foundation"
+  link="https://ghaasfoundation.org/content/ghf/en/home.html"
+  img="/img/sponsors/haas.png"
+  loading="eager"
+/>
+
+<Sponsor
+  name="Blacksburg Eye Associates"
+  link="https://www.blacksburgeye.com/"
+  img="/img/sponsors/BlacksburgEye.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="American Electric Power"
+  link="https://aep.com"
+  img="/img/sponsors/aep.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="BAE Systems"
+  link="https://www.baesystems.com/"
+  img="/img/sponsors/bae.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="AUVSI"
+  link="https://www.auvsiridgeandvalley.org/"
+  img="/img/sponsors/auvsi.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="Intuitive Foundation"
+  link="https://www.intuitive-foundation.org/first-robotics/"
+  img="/img/sponsors/intuitive.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="PTC"
+  link="https://www.ptc.com"
+  img="/img/sponsors/ptc.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="Kroger"
+  link="https://kroger.com/"
+  img="/img/sponsors/kroger.png"
+  loading="lazy"
+/>
+</SponsorTier>
+
+<SponsorTier name="Copperhead Sponsors" size={4}>
+<Sponsor
+  name="Nest Realty"
+  link="https://www.nestrealty.com/"
+  img="/img/sponsors/nest.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="EBAT Consulting"
+  link="https://ebatconsulting.com/"
+  img="/img/sponsors/ebat.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="ACI"
+  link="https://aciwebs.com/"
+  img="/img/sponsors/aci.png"
+  loading="lazy"
+/>
+
+<Sponsor
+  name="Online Metals"
+  link="https://onlinemetals.com/"
+  img="/img/sponsors/online_metals.png"
+  loading="lazy"
+/>
+</SponsorTier>
