@@ -18,7 +18,7 @@ type HeaderCardProps = {
 export default function HeaderCard(props: PropsWithChildren<HeaderCardProps>) {
   return (
     <Grid xs={12}>
-      <Card sx={{ mb: 4, p: 2, mx: 0 }}>
+      <Card sx={{ mt: 2, mb: 4, p: 2, mx: 0 }}>
         <Typography
           variant="h4"
           align="left"
@@ -33,7 +33,11 @@ export default function HeaderCard(props: PropsWithChildren<HeaderCardProps>) {
           variant="h6"
           align="left"
           color="text.secondary"
-          component="h1"
+          component="div"
+          sx={{
+            "& p": { m: 0, font: "inherit" },
+            "& p + p": { mt: 2 },
+          }}
         >
           {props.children}
         </Typography>
