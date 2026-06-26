@@ -1,4 +1,5 @@
 import HeaderCard from "../components/HeaderCard";
+import ContentPage from "../components/ContentPage";
 import { Sponsor, SponsorTier } from "../components/SponsorTiers";
 
 export const headerButtons = [
@@ -9,6 +10,7 @@ export const headerButtons = [
   { link: "mailto:team401@mcps.org", title: "Email Us" },
 ];
 
+<ContentPage>
 <HeaderCard title="Sponsors" buttons={headerButtons}>
 Team 401 couldn't exist without the generous monetary, material, and mentorship
 support from all of our sponsors. We're thankful for the extensive support that
@@ -121,3 +123,4 @@ interested in supporting the team!
   loading="lazy"
 />
 </SponsorTier>
+</ContentPage>

@@ -13,9 +13,11 @@ import {
 } from "@mui/material";
 import type { MDXComponents } from "mdx/types";
 
-import Page from "./src/app/components/Page";
-
-function MdxLink({ children, href = "", ...props }: ComponentPropsWithoutRef<"a">) {
+function MdxLink({
+  children,
+  href = "",
+  ...props
+}: ComponentPropsWithoutRef<"a">) {
   const isExternal = /^https?:\/\//.test(href);
 
   return (
@@ -31,20 +33,7 @@ function MdxLink({ children, href = "", ...props }: ComponentPropsWithoutRef<"a"
 }
 
 const mdxComponents: MDXComponents = {
-  wrapper: ({ children }) => (
-    <Page>
-      <Box
-        component="article"
-        sx={{
-          color: "text.secondary",
-          "& > :first-child": { mt: 0 },
-          "& > :last-child": { mb: 0 },
-        }}
-      >
-        {children}
-      </Box>
-    </Page>
-  ),
+  wrapper: ({ children }) => <>{children}</>,
   h1: ({ children }) => (
     <Typography
       variant="h3"
