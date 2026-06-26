@@ -1,0 +1,84 @@
+import HeaderCard from "../components/HeaderCard";
+import {
+  ContentCard,
+  ContentCardGrid,
+  ContentCardGridItem,
+  ContentCardLead,
+} from "../components/ContentCards";
+
+export const headerButtons = [
+  {
+    link: "https://drive.google.com/file/d/1beJ20KlyDS6WM4ANM7p32m1NsxwMOnPR/view?usp=sharing",
+    title: "Coalition Outline",
+  },
+  { link: "mailto:team401@mcps.org", title: "Email Us" },
+];
+
+<HeaderCard title="Rural Virginia Robotics Coalition" buttons={headerButtons}>
+Rural Virginia faces disproportionate access and funding issues for
+participation in *FIRST* and STEM education. The purpose of the RVRC
+is to unite FRC teams from disadvantaged areas in Virginia to pool
+resources and accomplish goals beyond the capabilities of any one
+team. The collective experiences of member teams will be used to guide
+advocacy and work on these issues in rural Virginia and address the
+needs of our community. Please review the Coalition Outline and email
+us to get involved!
+</HeaderCard>
+
+<ContentCard title="Coalition Objectives">
+<ContentCardLead>
+These are initial goals for the RVRC to work on addressing.
+</ContentCardLead>
+
+<ContentCardGrid>
+<ContentCardGridItem title="FLL Coaching Stipends">
+Most FLL teams fail not from lack of community interest, but lack
+of access to funding for coach compensation. Many teachers that
+volunteer to coach teams are often already overworked and underpaid
+and quickly realize that the commitment required to support an FLL team
+is significant. Grants received to cover team costs often do not cover
+coach compensation. The Coalition could address this issue by pooling
+funding and offering coaching stipends. The Coalition will search for
+corporate sponsors that would be interested in supporting scholastic
+endeavors beyond a single *FIRST* team.
+</ContentCardGridItem>
+
+<ContentCardGridItem title="Travel Equity Grants">
+A considerable expense for teams of any level is travel and competition
+registration. In order to help relieve teams of this burden, the Coalition
+will fundraise and pursue corporate sponsors to provide funds and grant
+opportunities. The Coalition is committed to reducing the impact of
+access to resources on FIRST event participation.
+</ContentCardGridItem>
+
+<ContentCardGridItem title="Elementary STEM Outreach">
+When FLL teams are not possible, many elementary schools lack the
+resources for hands-on STEM activities. The Coalition brings the
+unique opportunity to design a scalable, replicable, and educational
+activity that supplements an already existing curriculum. Some options
+can include 3D printed mechanisms, web-based tools, and team-building
+exercises. STEM does not have to be limited to engineering and can
+be used to teach kids about one the most unique features of Southwest
+Virginia: its environment. Scalable STEM activities could be specific
+to the Appalachian regions to teach lessons about mountain formation,
+watersheds, and forest ecosystems.
+</ContentCardGridItem>
+
+<ContentCardGridItem title="Gender Diversity Initiatives">
+Many initiatives have increased the number of women and non-binary
+people within STEM during elementary and middle school, however studies
+have shown that these people reduce their STEM involvement starting in
+high school. The Coalition will look into partnering with pre-existing
+advocacy groups or create strategies to increase gender diversity that
+work on a regional basis.
+</ContentCardGridItem>
+
+<ContentCardGridItem title="Open Source Scouting Data">
+Scouting can be a very time consuming task that benefits from repetition
+and verification. Team 401 is committed to developing open-source
+databases to better inform alliance selections, especially at higher
+levels of competition. The Coalition pledges to data transparency and
+to developing tools that lend themselves to collaboration and scalability.
+</ContentCardGridItem>
+</ContentCardGrid>
+</ContentCard>
