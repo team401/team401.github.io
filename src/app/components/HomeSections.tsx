@@ -8,7 +8,7 @@ export function HomePage(props: PropsWithChildren<unknown>) {
   return (
     <>
       <RespImage
-        src="/img/about/teamPhoto.jpg"
+        src="/img/about/2026teamPhoto.jpg"
         sizes="100vw"
         loading="eager"
       />
