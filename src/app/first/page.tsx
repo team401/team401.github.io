@@ -1,5 +1,5 @@
 import * as React from "react";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import { Box, Typography, Card, CardContent, CardActions } from "@mui/material";
 
 import { firstSections } from "./FirstData";
@@ -53,14 +53,16 @@ export default function AboutFirst() {
         {firstSections.map((section) => (
           <Grid container key={section.link}>
             <Grid
-              xs={12}
-              md={6}
-              maxWidth="100%"
-              marginBottom={{ xs: 1, md: 0 }}
-            >
+              size={{ xs: 12, md: 6 }}
+              sx={{
+                maxWidth: "100%",
+                marginBottom: { xs: 1, md: 0 }
+              }}>
               <RespImage src={section.img.src} loading={section.loading} />
             </Grid>
-            <Grid xs={12} md={6} marginBottom={{ xs: 6, md: 0 }}>
+            <Grid size={{ xs: 12, md: 6 }} sx={{
+              marginBottom: { xs: 6, md: 0 }
+            }}>
               <Card
                 sx={{
                   minHeight: "100%",
@@ -75,35 +77,38 @@ export default function AboutFirst() {
                   <Typography
                     variant="h5"
                     align="center"
-                    color="text.secondary"
                     component="h1"
-                    paddingBottom={0}
-                  >
+                    sx={{
+                      color: "text.secondary",
+                      paddingBottom: 0
+                    }}>
                     {section.heading}
                   </Typography>
                   <Box
                     sx={{
-                      display: "flex",
                       alignItems: "center",
+                      justifyContent: "center",
+                      paddingBottom: 1,
+                      display: "flex",
                       gap: "2rem",
-                    }}
-                    alignItems="center"
-                    justifyContent="center"
-                    paddingBottom={1}
-                  >
+                    }}>
                     <Typography
                       variant="h6"
-                      color="text.secondary"
                       component="h1"
                       noWrap
+                      sx={{
+                        color: "text.secondary"
+                      }}
                     >
                       Ages: {section.ages}
                     </Typography>
                     <Typography
                       variant="h6"
-                      color="text.secondary"
                       component="h1"
                       noWrap
+                      sx={{
+                        color: "text.secondary"
+                      }}
                     >
                       Grades: {section.grades}
                     </Typography>
@@ -111,20 +116,22 @@ export default function AboutFirst() {
                   <Typography
                     variant="body1"
                     align="left"
-                    color="text.secondary"
-                    fontSize="large"
                     component="p"
-                  >
+                    sx={{
+                      color: "text.secondary",
+                      fontSize: "large"
+                    }}>
                     {section.para}
                   </Typography>
                 </CardContent>
                 <CardActions sx={{ p: 0 }}>
                   <Box
-                    justifyContent="center"
-                    textAlign="center"
-                    minWidth="100%"
-                    sx={{ p: 0 }}
-                  >
+                    sx={{
+                      justifyContent: "center",
+                      textAlign: "center",
+                      minWidth: "100%",
+                      p: 0
+                    }}>
                     <StyledButton link={section.link} title="Find out more" />
                   </Box>
                 </CardActions>

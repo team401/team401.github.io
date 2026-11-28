@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import * as React from "react";
 import { Suspense } from "react";
-import { Box, CssBaseline, GlobalStyles, ThemeProvider } from "@mui/material";
+import { CssBaseline, GlobalStyles, ThemeProvider, Toolbar } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 import AppBarMemo from "./components/TeamAppBar";
@@ -35,7 +35,7 @@ export default function RootLayout({
             />
             <AppBarMemo />
             <ScrollToTop />
-            <Box sx={{ height: "5vh" }}></Box>
+            <Toolbar />
             <Suspense fallback={<div style={{ height: "100vh" }}></div>}>
               {children}
             </Suspense>

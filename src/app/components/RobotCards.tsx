@@ -46,17 +46,26 @@ export function Robot({
   return (
     <Grid container columnSpacing={{ xs: 0, md: 3 }} sx={{ pt: 5 }}>
       <Grid
-        xs={12}
-        item
-        md={img ? 6 : 0}
-        marginBottom={{ xs: 1, md: 0 }}
-        textAlign="center"
-      >
+        sx={{
+          marginBottom: { xs: 1, md: 0 },
+          textAlign: "center"
+        }}
+        size={{
+          xs: 12,
+          md: img ? 6 : 0
+        }}>
         <Zoom zoomImg={{ src: full }}>
           <RespImage src={img} loading={loading} />
         </Zoom>
       </Grid>
-      <Grid xs={12} item md={img ? 6 : 12} marginBottom={{ xs: 5, md: 0 }}>
+      <Grid
+        sx={{
+          marginBottom: { xs: 5, md: 0 }
+        }}
+        size={{
+          xs: 12,
+          md: img ? 6 : 12
+        }}>
         <Card
           sx={{
             minHeight: "100%",
@@ -72,8 +81,10 @@ export function Robot({
             <Typography
               variant="h4"
               align="left"
-              color="text.secondary"
               component="h1"
+              sx={{
+                color: "text.secondary"
+              }}
             >
               {year} - {name}
             </Typography>
@@ -81,10 +92,11 @@ export function Robot({
               <Typography
                 variant="h5"
                 align="left"
-                color="text.secondary"
                 component="h1"
-                padding={0}
-              >
+                sx={{
+                  color: "text.secondary",
+                  padding: 0
+                }}>
                 Record: {record}
               </Typography>
             )}
@@ -94,10 +106,11 @@ export function Robot({
             <Stack
               direction="row"
               spacing={1}
-              justifyContent="center"
-              textAlign="center"
-              width="100%"
-            >
+              sx={{
+                justifyContent: "center",
+                textAlign: "center",
+                width: "100%"
+              }}>
               {cadLink && (
                 <StyledButton link={cadLink} title="CAD Model" small />
               )}
@@ -133,8 +146,10 @@ export function RobotEvent({
       <Typography
         variant="h6"
         align="left"
-        color="text.secondary"
         component="h1"
+        sx={{
+          color: "text.secondary"
+        }}
       >
         <Link
           href={`https://www.thebluealliance.com/event/${code}`}
@@ -146,8 +161,10 @@ export function RobotEvent({
       <Typography
         variant="body1"
         align="left"
-        color="text.secondary"
         component="h1"
+        sx={{
+          color: "text.secondary"
+        }}
       >
         {awards}
       </Typography>
@@ -160,14 +177,13 @@ export function RobotNotes(props: PropsWithChildren<unknown>) {
     <Typography
       variant="body1"
       align="left"
-      color="text.secondary"
       component="div"
-      paddingTop={1}
       sx={{
+        color: "text.secondary",
+        paddingTop: 1,
         "& p": { m: 0, font: "inherit" },
-        "& p + p": { mt: 2 },
-      }}
-    >
+        "& p + p": { mt: 2 }
+      }}>
       <b>Notes: </b>
       {props.children}
     </Typography>
