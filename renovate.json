@@ -2,5 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>team401/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "description": "TypeScript 7 is unsupported by Next.js's typescript-eslint stack",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    }
   ]
 }

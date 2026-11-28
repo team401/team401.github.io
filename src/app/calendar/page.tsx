@@ -1,13 +1,12 @@
 "use client";
 
 import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin from "@fullcalendar/interaction";
+import dayGridPlugin from "@fullcalendar/react/daygrid";
+import timeGridPlugin from "@fullcalendar/react/timegrid";
+import interactionPlugin from "@fullcalendar/react/interaction";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import bootstrap5Plugin from "@fullcalendar/bootstrap5";
-import { EventClickArg } from "@fullcalendar/core/index.js";
-import { EventImpl } from "@fullcalendar/core/internal";
+import type { EventApi, EventClickInfo } from "@fullcalendar/react";
 import {
   Box,
   Dialog,
@@ -19,18 +18,21 @@ import {
 } from "@mui/material";
 import React, { useMemo } from "react";
 import moment from "moment";
+import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "@fullcalendar/react/skeleton.css";
+import "@fullcalendar/bootstrap5/theme.css";
 
-import "./bootstrap.min.css";
+import "./calendar.css";
 import Page from "../components/Page";
 
 export default function Calendar() {
-  const [selectedEvent, setSelectedEvent] = React.useState<EventImpl | null>(
+  const [selectedEvent, setSelectedEvent] = React.useState<EventApi | null>(
     null
   );
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = (info: EventClickArg) => {
+  const handleOpen = (info: EventClickInfo) => {
     info.jsEvent.preventDefault();
     setSelectedEvent(info.event);
     setOpen(true);
@@ -73,7 +75,6 @@ export default function Calendar() {
       >
         <FullCalendar
           plugins={plugins}
-          themeSystem="bootstrap5"
           height={"calc(95vh - 103px - 64px)"}
           initialView="dayGridMonth"
           headerToolbar={{
@@ -84,7 +85,7 @@ export default function Calendar() {
           googleCalendarApiKey={process.env.NEXT_PUBLIC_CALENDAR_KEY}
           eventSources={eventSources}
           eventClick={handleOpen}
-          eventBackgroundColor="#861f41"
+          eventColor="#861f41"
           eventDisplay="block"
         />
       </Box>

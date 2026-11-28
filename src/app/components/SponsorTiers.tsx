@@ -21,20 +21,27 @@ export function SponsorTier({
   });
 
   return (
-    <Box width="100%">
+    <Box sx={{
+      width: "100%"
+    }}>
       <Grid
         container
-        item
-        lg={12}
-        sx={{ pt: 6, pb: 1 }}
-        width="100%"
-        justifyContent="center"
-      >
+        sx={{
+          width: "100%",
+          justifyContent: "center",
+          pt: 6,
+          pb: 1
+        }}
+        size={{
+          lg: 12
+        }}>
         <Typography
           variant="h4"
           align="left"
-          color="text.secondary"
           component="h1"
+          sx={{
+            color: "text.secondary"
+          }}
         >
           {name}
         </Typography>
@@ -48,12 +55,12 @@ export function SponsorTier({
       />
       <Grid
         container
-        item
         columnSpacing={12}
-        sx={{ pb: 4 }}
-        justifyContent="center"
-        alignItems="center"
-      >
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          pb: 4
+        }}>
         {sponsors}
       </Grid>
     </Box>
@@ -75,16 +82,18 @@ export function Sponsor({
 }) {
   return (
     <Grid
-      xs={12 / Math.ceil(sponsorTierSize / 2)}
-      sm={12 / (sponsorTierSize - 1)}
       container
-      item
-      justifyContent="center"
-      alignItems="center"
-      md={12 / sponsorTierSize}
-      width="100%"
-      sx={{ pb: 4 }}
-    >
+      sx={{
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        pb: 4
+      }}
+      size={{
+        xs: 12 / Math.ceil(sponsorTierSize / 2),
+        sm: 12 / (sponsorTierSize - 1),
+        md: 12 / sponsorTierSize
+      }}>
       <Link href={link} target="_blank" aria-label={name}>
         <RespImage
           src={img}

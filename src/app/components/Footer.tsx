@@ -41,8 +41,10 @@ function Copyright() {
     <Typography
       variant="subtitle1"
       align="center"
-      color="text.secondary"
       component="p"
+      sx={{
+        color: "text.secondary"
+      }}
     >
       {"Copyright © "}
       <Link color="inherit" href="https://team401.github.io/">
@@ -63,7 +65,9 @@ export default function Footer() {
         sx={{ paddingTop: 3, background: theme.palette.background.default }}
       >
         <Box sx={{ p: 1 }} component="footer">
-          <Stack spacing={2} direction="row" justifyContent="center">
+          <Stack spacing={2} direction="row" sx={{
+            justifyContent: "center"
+          }}>
             {socials.map((social) => (
               <Link href={social.link} key={social.link}>
                 {social.icon}

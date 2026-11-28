@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+  }
+}

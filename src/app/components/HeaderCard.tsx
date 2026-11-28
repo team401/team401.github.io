@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { Card, Stack, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import { PropsWithChildren } from "react";
 
 import StyledButton from "./StyledButton";
@@ -17,36 +17,38 @@ type HeaderCardProps = {
 
 export default function HeaderCard(props: PropsWithChildren<HeaderCardProps>) {
   return (
-    <Grid xs={12}>
+    <Grid size={12}>
       <Card sx={{ mb: 4, p: 2, mx: 0 }}>
         <Typography
           variant="h4"
           align="left"
-          color="text.secondary"
           component="h1"
-          paddingBottom={2}
-          textAlign="center"
-        >
+          sx={{
+            color: "text.secondary",
+            paddingBottom: 2,
+            textAlign: "center"
+          }}>
           {props.title}
         </Typography>
         <Typography
           variant="h6"
           align="left"
-          color="text.secondary"
           component="div"
           sx={{
+            color: "text.secondary",
             "& p": { m: 0, font: "inherit" },
-            "& p + p": { mt: 2 },
-          }}
-        >
+            "& p + p": { mt: 2 }
+          }}>
           {props.children}
         </Typography>
         <Stack
           direction="row"
-          justifyContent="center"
-          alignContent="center"
-          sx={{ pb: 0, mb: 0 }}
-        >
+          sx={{
+            justifyContent: "center",
+            alignContent: "center",
+            pb: 0,
+            mb: 0
+          }}>
           {props.buttons?.map((button) => (
             <StyledButton
               link={button.link}

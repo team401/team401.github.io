@@ -88,10 +88,15 @@ export default function TeamAppBar() {
                     <ListItemButton>
                       <ListItemText
                         primary={page.title}
-                        primaryTypographyProps={{
-                          fontSize: 18,
-                          fontWeight: page.path === pathname ? "800" : "400",
-                          color: "text.secondary",
+                        slotProps={{
+                          primary: {
+                            sx: {
+                              fontSize: 18,
+                              fontWeight:
+                                page.path === pathname ? "800" : "400",
+                              color: "text.secondary",
+                            },
+                          },
                         }}
                         sx={{
                           textDecoration:
